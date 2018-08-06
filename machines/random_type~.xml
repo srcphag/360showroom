@@ -1,0 +1,151 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="E:\vvvv\machines\random_type.v4p" systemname="random_type" filename="E:\vvvv\machines\random_type.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="8550" top="4560" width="14940" height="9555">
+   </BOUNDS>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="18">
+   <BOUNDS type="Node" left="1980" top="3750" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1980" top="3750" width="465" height="435">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" values="0,0" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="trigger">
+   </PIN>
+   </NODE>
+   <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="1965" top="5895" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Scale" slicecount="1" visible="1" values="86">
+   </PIN>
+   <PIN pinname="Is Integer" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="16">
+   <BOUNDS type="Node" left="1905" top="5505" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1905" top="5505" width="780" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="99999">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Scale">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="15">
+   <BOUNDS type="Node" left="420" top="315" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="420" top="315" width="1170" height="5805">
+   </BOUNDS>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="30" values="Drug,Love,Fear,Sadness,7.59_,GHB,Sex,Darkness,You,She,,,,,,,,,,,,,,,,,,,,">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="1365" top="6495" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Output String" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="4" dstpinname="Index">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="20">
+   <BOUNDS type="Node" left="2775" top="6765" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2775" top="6765" width="2655" height="315">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="https://www.youtube.com/">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="words">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <PACK Name="dx11" Version="1.0.3">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="clock" filename="clock.v4p" nodename="machines\clock.v4p" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="11745" top="1290" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="trigger_clock" visible="1">
+   </PIN>
+   <PIN pinname="tempo" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="24">
+   <BOUNDS type="Node" left="11745" top="525" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11745" top="525" width="2070" height="660">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="120">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="23">
+   <BOUNDS type="Node" left="11730" top="1770" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="clock">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="trigger_clock" dstnodeid="23" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="22">
+   <BOUNDS type="Node" left="12585" top="1260" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12585" top="1260" width="1275" height="1305">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="trigger_clock" dstnodeid="22" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="11805" y="1395">
+   </LINKPOINT>
+   <LINKPOINT x="12585" y="1395">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="25" dstpinname="tempo">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="trigger_clock" dstnodeid="18" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="20" dstpinname="Input String">
+   </LINK>
+   </PATCH>

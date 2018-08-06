@@ -1,0 +1,189 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="D:\_vvvv\machines\video_inDX11.v4p" systemname="video_inDX11" filename="D:\_vvvv\machines\video_inDX11.v4p" scrollx="0" scrolly="-720">
+   <BOUNDS type="Window" left="13875" top="15210" width="11745" height="7650">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.0.3">
+   </PACK>
+   <PACK Name="VVVV.Packs.Image-sebl_beta43" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="FullscreenQuad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\modules\FullscreenQuad (DX11.Layer).v4p" nodename="FullscreenQuad (DX11.Layer)" componentmode="Hidden" id="22">
+   <BOUNDS type="Node" left="1515" top="2070" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (DX11 MRT)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11 MRT)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="1215" top="2640" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1215" top="2640" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Texture SizeXY" slicecount="2" visible="1" values="1920,1080">
+   </PIN>
+   <PIN pinname="Buffers" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Layer" dstnodeid="21" dstpinname="Layer">
+   </LINK>
+   <NODE systemname="Spout (DX11.Texture Sender)" filename="%VVVV%\packs\dx11-Spout\nodes\modules\Spout (DX11.Texture Sender).v4p" nodename="Spout (DX11.Texture Sender)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="2115" top="3135" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Sender Name" slicecount="1" values="VVVV_capture">
+   </PIN>
+   <PIN pinname="Force Update" slicecount="1" visible="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Buffers" dstnodeid="20" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InABox" id="23">
+   <BOUNDS type="Node" left="4200" top="2250" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4200" top="2250" width="6135" height="4245">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7755" top="2685" width="6240" height="5085">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Layer" dstnodeid="23" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="VideoIn (DX11 DShow)" filename="%VVVV%\packs\dx11\nodes\plugins\dshow\VVVV.DX11.Nodes.DShow.dll" nodename="VideoIn (DX11 DShow)" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="1950" top="1320" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1950" top="1320" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Device" slicecount="1" visible="1" values="|Cam Link|">
+   </PIN>
+   <PIN pinname="Video Format" slicecount="1" visible="1" values="YUY2">
+   </PIN>
+   <PIN pinname="Resolution" slicecount="1" visible="1" values="1280x720">
+   </PIN>
+   <PIN pinname="Framerate" slicecount="1" visible="1" values="59">
+   </PIN>
+   <PIN pinname="Enable" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Update" slicecount="1" visible="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Texture Out" dstnodeid="22" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="IOBox (Enumerations)" nodename="IOBox (Enumerations)" componentmode="InABox" id="26">
+   <BOUNDS type="Node" left="3390" top="765" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3390" top="765" width="1200" height="240">
+   </BOUNDS>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="59">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="27">
+   <BOUNDS type="Node" left="6930" top="435" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6930" top="435" width="855" height="915">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="UPDATE">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="27" srcpinname="Y Output Value" dstnodeid="25" dstpinname="Update">
+   </LINK>
+   <NODE systemname="Select (Enumerations Bin)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Enumerations Bin)" componentmode="Hidden" id="29">
+   <BOUNDS type="Node" left="3375" top="345" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3375" top="345" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Select" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="26" dstpinname="Input Enum">
+   </LINK>
+   <NODE systemname="IOBox (Enumerations)" nodename="IOBox (Enumerations)" componentmode="InABox" id="30">
+   <BOUNDS type="Node" left="2025" top="765" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2025" top="765" width="1200" height="240">
+   </BOUNDS>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="1280x720">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (Enumerations Bin)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Enumerations Bin)" componentmode="Hidden" id="31">
+   <BOUNDS type="Node" left="2010" top="360" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2010" top="360" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Select" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="31" srcpinname="Output" dstnodeid="30" dstpinname="Input Enum">
+   </LINK>
+   <NODE systemname="IOBox (Enumerations)" nodename="IOBox (Enumerations)" componentmode="InABox" id="32">
+   <BOUNDS type="Node" left="630" top="765" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="630" top="765" width="1200" height="240">
+   </BOUNDS>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="1280x720">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (Enumerations Bin)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Enumerations Bin)" componentmode="Hidden" id="33">
+   <BOUNDS type="Node" left="630" top="375" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="630" top="375" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Select" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Output" dstnodeid="32" dstpinname="Input Enum">
+   </LINK>
+   <NODE systemname="IOBox (Enumerations)" nodename="IOBox (Enumerations)" componentmode="InABox" id="35">
+   <BOUNDS type="Node" left="4710" top="750" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4710" top="750" width="1200" height="240">
+   </BOUNDS>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="1280x720">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (Enumerations Bin)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Enumerations Bin)" componentmode="Hidden" id="34">
+   <BOUNDS type="Node" left="4725" top="345" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4725" top="345" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Select" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="|Cam Link|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Output" dstnodeid="35" dstpinname="Input Enum">
+   </LINK>
+   </PATCH>
