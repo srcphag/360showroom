@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
    <PATCH nodename="D:\_vvvv\machines\osc_resolume360.v4p" scrollx="240" scrolly="-360" systemname="osc_resolume360" filename="D:\_vvvv\machines\osc_resolume360.v4p">
-   <BOUNDS type="Window" left="23295" top="480" width="9630" height="14325">
+   <BOUNDS type="Window" left="3120" top="600" width="11190" height="14325">
    </BOUNDS>
    <NODE componentmode="InABox" id="44" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="1110" top="13710" type="Node" width="0">
@@ -199,11 +199,11 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="Zip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (Value)" componentmode="Hidden" id="127">
-   <BOUNDS type="Node" left="1275" top="2430" width="100" height="100">
+   <BOUNDS type="Node" left="1275" top="2430" width="6330" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1275" top="2430" width="3000" height="3000">
    </BOUNDS>
-   <PIN pinname="Input Count" slicecount="1" values="24">
+   <PIN pinname="Input Count" slicecount="1" values="33">
    </PIN>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0.555586278438568">
    </PIN>
@@ -237,7 +237,7 @@
    </PIN>
    <PIN pinname="Input 17" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Input 19" visible="1" slicecount="1" values="0">
+   <PIN pinname="Input 19" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Input 18" visible="1" slicecount="1" values="0">
    </PIN>
@@ -245,7 +245,7 @@
    </PIN>
    <PIN pinname="Input 16" visible="1">
    </PIN>
-   <PIN pinname="Input 20" visible="1" slicecount="1" values="1">
+   <PIN pinname="Input 20" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Input 21" visible="1" slicecount="1" values="0.157374083995819">
    </PIN>
@@ -255,21 +255,39 @@
    </PIN>
    <PIN pinname="Input 24" visible="1" slicecount="1" values="0.157374083995819">
    </PIN>
+   <PIN pinname="Input 25" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input 26" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input 27" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input 28" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input 29" visible="1">
+   </PIN>
+   <PIN pinname="Input 31" visible="1">
+   </PIN>
+   <PIN pinname="Input 30" visible="1">
+   </PIN>
+   <PIN pinname="Input 32" visible="1">
+   </PIN>
+   <PIN pinname="Input 33" visible="1" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <PACK Name="VVVV.Packs.Image-sebl_beta43" Version="0.2.0">
    </PACK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="128">
    <BOUNDS type="Node" left="1275" top="1335" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="layer1">
+   <PIN pinname="Receive String" slicecount="1" values="layerfader/1">
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="129">
-   <BOUNDS type="Node" left="2205" top="1335" width="100" height="100">
+   <BOUNDS type="Node" left="1875" top="885" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="layer2">
+   <PIN pinname="Receive String" slicecount="1" values="layerfader/2">
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -277,7 +295,7 @@
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="130">
    <BOUNDS type="Node" left="3180" top="1350" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="layer3">
+   <PIN pinname="Receive String" slicecount="1" values="layerfader/3">
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -285,21 +303,21 @@
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="132">
    <BOUNDS type="Node" left="945" top="3285" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="945" top="3285" width="6495" height="4530">
+   <BOUNDS type="Box" left="945" top="3285" width="6510" height="7395">
    </BOUNDS>
-   <PIN pinname="Rows" slicecount="1" values="24">
+   <PIN pinname="Rows" slicecount="1" values="33">
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Input String" slicecount="24" values="/composition/layers/1/video/effects/brightnesscontrast/effect/brightness,/composition/layers/2/video/effects/brightnesscontrast/effect/brightness,/composition/layers/3/video/effects/brightnesscontrast/effect/brightness,/composition/layers/4/video/effects/brightnesscontrast/effect/brightness,/composition/layers/1/video/effects/brightnesscontrast/effect/contrast,/composition/layers/2/video/effects/brightnesscontrast/effect/contrast,/composition/layers/3/video/effects/brightnesscontrast/effect/contrast,/composition/layers/4/video/effects/brightnesscontrast/effect/contrast,/composition/layers/1/video/effects/blur/effect/gaussian,/composition/layers/2/video/effects/blur/effect/gaussian,/composition/layers/3/video/effects/blur/effect/gaussian,/composition/layers/4/video/effects/blur/effect/gaussian,/composition/groups/1/columns/1/connect,/composition/groups/1/columns/2/connect,/composition/groups/1/columns/3/connect,/composition/groups/1/columns/4/connect,/composition/layers/6/video/opacity,/composition/layers/7/video/opacity,/composition/layers/8/video/opacity,/composition/layers/9/video/opacity,/composition/layers/6/video/effects/transform/scale,/composition/layers/7/video/effects/transform/scale,/composition/layers/8/video/effects/transform/scale,/composition/layers/9/video/effects/transform/scale">
+   <PIN pinname="Input String" slicecount="33" values="/composition/layers/1/video/effects/brightnesscontrast/effect/brightness,/composition/layers/2/video/effects/brightnesscontrast/effect/brightness,/composition/layers/3/video/effects/brightnesscontrast/effect/brightness,/composition/layers/4/video/effects/brightnesscontrast/effect/brightness,/composition/layers/1/video/effects/brightnesscontrast/effect/contrast,/composition/layers/2/video/effects/brightnesscontrast/effect/contrast,/composition/layers/3/video/effects/brightnesscontrast/effect/contrast,/composition/layers/4/video/effects/brightnesscontrast/effect/contrast,/composition/layers/1/video/effects/blur/effect/gaussian,/composition/layers/2/video/effects/blur/effect/gaussian,/composition/layers/3/video/effects/blur/effect/gaussian,/composition/layers/4/video/effects/blur/effect/gaussian,/composition/groups/1/columns/1/connect,/composition/groups/1/columns/2/connect,/composition/groups/1/columns/3/connect,/composition/groups/1/columns/4/connect,/composition/layers/6/video/opacity,/composition/layers/7/video/opacity,/composition/layers/8/video/opacity,/composition/layers/9/video/opacity,/composition/layers/6/video/effects/transform/scale,/composition/layers/7/video/effects/transform/scale,/composition/layers/8/video/effects/transform/scale,/composition/layers/9/video/effects/transform/scale,/composition/layers/10/video/opacity,/composition/layers/11/video/opacity,/composition/layers/12/video/opacity,/composition/layers/13/video/opacity,/composition/layers/10/video/effects/transform/scale,/composition/layers/11/video/effects/transform/scale,/composition/layers/12/video/effects/transform/scale,/composition/layers/13/video/effects/transform/scale,/composition/groups/4/video/opacity">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="133">
-   <BOUNDS type="Node" left="945" top="7950" width="100" height="100">
+   <BOUNDS type="Node" left="945" top="11400" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -415,37 +433,31 @@
    <LINK srcnodeid="148" srcpinname="Input Value" dstnodeid="127" dstpinname="Input 16">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="150">
-   <BOUNDS type="Node" left="4440" top="1800" width="100" height="100">
+   <BOUNDS type="Node" left="8505" top="4335" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="canvas1">
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="150" srcpinname="Input Value" dstnodeid="127" dstpinname="Input 17">
-   </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="151">
-   <BOUNDS type="Node" left="5550" top="750" width="100" height="100">
+   <BOUNDS type="Node" left="8475" top="2820" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="canvas2">
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="151" srcpinname="Input Value" dstnodeid="127" dstpinname="Input 18">
-   </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="152">
-   <BOUNDS type="Node" left="5535" top="1245" width="100" height="100">
+   <BOUNDS type="Node" left="8490" top="3585" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="canvas3">
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="152" srcpinname="Input Value" dstnodeid="127" dstpinname="Input 19">
-   </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="153">
-   <BOUNDS type="Node" left="3075" top="855" width="100" height="100">
+   <BOUNDS type="Node" left="8535" top="5115" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="canvas4">
    </PIN>
@@ -455,19 +467,17 @@
    <LINK srcnodeid="146" srcpinname="Input Value" dstnodeid="127" dstpinname="Input 13">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="154">
-   <BOUNDS type="Node" left="5460" top="240" width="100" height="100">
+   <BOUNDS type="Node" left="5925" top="1020" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="canvasop">
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="153" srcpinname="Input Value" dstnodeid="127" dstpinname="Input 20">
-   </LINK>
    <LINK srcnodeid="133" srcpinname="Output" dstnodeid="40" dstpinname="Address">
    </LINK>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="157">
-   <BOUNDS type="Node" left="7500" top="1185" width="100" height="100">
+   <BOUNDS type="Node" left="5895" top="1530" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -485,5 +495,433 @@
    <LINK srcnodeid="157" srcpinname="Output" dstnodeid="127" dstpinname="Input 22">
    </LINK>
    <LINK srcnodeid="157" srcpinname="Output" dstnodeid="127" dstpinname="Input 21">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="158">
+   <BOUNDS type="Node" left="8505" top="5910" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="P5_canvas1">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="159">
+   <BOUNDS type="Node" left="8520" top="6690" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="P5_canvas2">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="160">
+   <BOUNDS type="Node" left="8535" top="7500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="P5_canvas3">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="161">
+   <BOUNDS type="Node" left="8535" top="8295" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="P5_canvas4">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="164">
+   <BOUNDS type="Node" left="8505" top="1545" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="P5_canvasop">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="163">
+   <BOUNDS type="Node" left="7245" top="1740" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="164" srcpinname="Input Value" dstnodeid="163" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="163" srcpinname="Output" dstnodeid="127" dstpinname="Input 29">
+   </LINK>
+   <LINK srcnodeid="163" srcpinname="Output" dstnodeid="127" dstpinname="Input 31">
+   </LINK>
+   <LINK srcnodeid="163" srcpinname="Output" dstnodeid="127" dstpinname="Input 30">
+   </LINK>
+   <LINK srcnodeid="163" srcpinname="Output" dstnodeid="127" dstpinname="Input 32">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="165">
+   <BOUNDS type="Node" left="8505" top="1965" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="canvas5">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="166" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
+   <BOUNDS height="0" left="8505" top="2385" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
+   </PIN>
+   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
+   </PIN>
+   <PIN pinname="Velocity Out" visible="1">
+   </PIN>
+   <PIN pinname="Acceleration Out" visible="1">
+   </PIN>
+   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
+   </PIN>
+   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
+   </PIN>
+   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="165" srcpinname="Input Value" dstnodeid="166" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="166" srcpinname="Position Out" dstnodeid="127" dstpinname="Input 33">
+   </LINK>
+   <NODE id="167" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
+   <BOUNDS height="0" left="8475" top="3180" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
+   </PIN>
+   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
+   </PIN>
+   <PIN pinname="Velocity Out" visible="1">
+   </PIN>
+   <PIN pinname="Acceleration Out" visible="1">
+   </PIN>
+   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
+   </PIN>
+   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
+   </PIN>
+   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="167" srcpinname="Position Out" dstnodeid="127" dstpinname="Input 18">
+   </LINK>
+   <LINK srcnodeid="151" srcpinname="Input Value" dstnodeid="167" dstpinname="Go To Position">
+   </LINK>
+   <NODE id="168" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
+   <BOUNDS height="0" left="8475" top="3975" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
+   </PIN>
+   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
+   </PIN>
+   <PIN pinname="Velocity Out" visible="1">
+   </PIN>
+   <PIN pinname="Acceleration Out" visible="1">
+   </PIN>
+   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
+   </PIN>
+   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
+   </PIN>
+   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="152" srcpinname="Input Value" dstnodeid="168" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="168" srcpinname="Position Out" dstnodeid="127" dstpinname="Input 19">
+   </LINK>
+   <NODE id="169" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
+   <BOUNDS height="0" left="8490" top="4710" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
+   </PIN>
+   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
+   </PIN>
+   <PIN pinname="Velocity Out" visible="1">
+   </PIN>
+   <PIN pinname="Acceleration Out" visible="1">
+   </PIN>
+   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
+   </PIN>
+   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
+   </PIN>
+   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="150" srcpinname="Input Value" dstnodeid="169" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="169" srcpinname="Position Out" dstnodeid="127" dstpinname="Input 17">
+   </LINK>
+   <NODE id="176" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
+   <BOUNDS height="0" left="8535" top="5490" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
+   </PIN>
+   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
+   </PIN>
+   <PIN pinname="Velocity Out" visible="1">
+   </PIN>
+   <PIN pinname="Acceleration Out" visible="1">
+   </PIN>
+   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
+   </PIN>
+   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
+   </PIN>
+   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="176" srcpinname="Position Out" dstnodeid="127" dstpinname="Input 20">
+   </LINK>
+   <LINK srcnodeid="153" srcpinname="Input Value" dstnodeid="176" dstpinname="Go To Position">
+   </LINK>
+   <NODE id="177" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
+   <BOUNDS height="0" left="8505" top="6300" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
+   </PIN>
+   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
+   </PIN>
+   <PIN pinname="Velocity Out" visible="1">
+   </PIN>
+   <PIN pinname="Acceleration Out" visible="1">
+   </PIN>
+   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
+   </PIN>
+   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
+   </PIN>
+   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="158" srcpinname="Input Value" dstnodeid="177" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="177" srcpinname="Position Out" dstnodeid="127" dstpinname="Input 25">
+   </LINK>
+   <NODE id="178" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
+   <BOUNDS height="0" left="8535" top="7080" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
+   </PIN>
+   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
+   </PIN>
+   <PIN pinname="Velocity Out" visible="1">
+   </PIN>
+   <PIN pinname="Acceleration Out" visible="1">
+   </PIN>
+   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
+   </PIN>
+   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
+   </PIN>
+   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="159" srcpinname="Input Value" dstnodeid="178" dstpinname="Go To Position">
+   </LINK>
+   <NODE id="179" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
+   <BOUNDS height="0" left="8550" top="7875" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
+   </PIN>
+   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
+   </PIN>
+   <PIN pinname="Velocity Out" visible="1">
+   </PIN>
+   <PIN pinname="Acceleration Out" visible="1">
+   </PIN>
+   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
+   </PIN>
+   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
+   </PIN>
+   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="160" srcpinname="Input Value" dstnodeid="179" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="178" srcpinname="Position Out" dstnodeid="127" dstpinname="Input 26">
+   </LINK>
+   <LINK srcnodeid="179" srcpinname="Position Out" dstnodeid="127" dstpinname="Input 27">
+   </LINK>
+   <NODE id="180" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
+   <BOUNDS height="0" left="8550" top="8715" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
+   </PIN>
+   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
+   </PIN>
+   <PIN pinname="Velocity Out" visible="1">
+   </PIN>
+   <PIN pinname="Acceleration Out" visible="1">
+   </PIN>
+   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
+   </PIN>
+   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
+   </PIN>
+   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
+   </PIN>
+   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="161" srcpinname="Input Value" dstnodeid="180" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="180" srcpinname="Position Out" dstnodeid="127" dstpinname="Input 28">
    </LINK>
    </PATCH>
