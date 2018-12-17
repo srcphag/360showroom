@@ -1,0 +1,317 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="D:\_vvvv\machines\360software_trigger.v4p" scrollx="0" scrolly="1080" systemname="360software_trigger" filename="D:\_vvvv\machines\360software_trigger.v4p">
+   <BOUNDS type="Window" left="9870" top="2790" width="6555" height="7215">
+   </BOUNDS>
+   <NODE id="16" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="270" top="5205" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="270" top="5205" width="2640" height="1815">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Output">
+   </PIN>
+   </NODE>
+   <NODE id="15" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3075" top="5190" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3075" top="5190" width="2280" height="1245">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Error">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE id="14" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="4515" top="4395" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4515" top="4395" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="IsRunning">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="13" systemname="Add (String)" nodename="Add (String)" componentmode="Hidden">
+   <BOUNDS type="Node" left="285" top="4230" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="|C:\Program Files\Resolume Arena 6\|">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="12" systemname="ShellExecute (Windows Advanced)" filename="%VVVV%\lib\nodes\plugins\ShellExecute.dll" nodename="ShellExecute (Windows Advanced)" componentmode="Hidden">
+   <BOUNDS type="Node" left="270" top="4665" width="3840" height="270">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Arguments" visible="1" encoded="0">
+   </PIN>
+   <PIN pinname="Block until finished" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Execute" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Executable file" visible="1">
+   </PIN>
+   <PIN pinname="Error" visible="1">
+   </PIN>
+   <PIN pinname="IsRunning" visible="1">
+   </PIN>
+   <PIN pinname="Show Window" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Kill" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="ExitCode" visible="1">
+   </PIN>
+   <PIN pinname="PID" visible="1">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="File" visible="1" slicecount="1" values="|shutdown -r -f|">
+   </PIN>
+   <PIN pinname="Commandline Arguments" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE id="11" systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox">
+   <BOUNDS type="Node" left="4515" top="3870" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4515" top="3870" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="KILL">
+   </PIN>
+   </NODE>
+   <NODE id="10" systemname="trig_resolume" filename="trig_resolume.v4p" nodename="machines\trig_resolume.v4p" componentmode="Hidden">
+   <BOUNDS type="Node" left="2895" top="3915" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="kill" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Execute" visible="1">
+   </PIN>
+   <PIN pinname="simulate" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Window" left="16710" top="1740" width="10125" height="8430">
+   </BOUNDS>
+   </NODE>
+   <NODE id="9" systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden">
+   <BOUNDS type="Node" left="2895" top="4320" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="8" systemname="ShellExecute (Windows Advanced)" filename="%VVVV%\lib\nodes\plugins\ShellExecute.dll" nodename="ShellExecute (Windows Advanced)" componentmode="Hidden">
+   <BOUNDS type="Node" left="375" top="2205" width="3690" height="270">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Arguments" visible="1" encoded="0">
+   </PIN>
+   <PIN pinname="Block until finished" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Execute" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Executable file" visible="1">
+   </PIN>
+   <PIN pinname="Error" visible="1">
+   </PIN>
+   <PIN pinname="IsRunning" visible="1">
+   </PIN>
+   <PIN pinname="Show Window" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Kill" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="ExitCode" visible="1">
+   </PIN>
+   <PIN pinname="PID" visible="1">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="File" visible="1" slicecount="1" values="|shutdown -r -f|">
+   </PIN>
+   <PIN pinname="Commandline Arguments" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE id="7" systemname="Add (String)" nodename="Add (String)" componentmode="Hidden">
+   <BOUNDS type="Node" left="375" top="1845" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="|C:\Program Files\Elgato\GameCapture\|">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="6" systemname="trig_camlink" filename="trig_camlink.v4p" nodename="D:\_vvvv\machines\trig_camlink.v4p" componentmode="Hidden">
+   <BOUNDS type="Node" left="2932" top="1653" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="820" top="390" width="4225" height="5395">
+   </BOUNDS>
+   <BOUNDS type="Window" left="9195" top="12450" width="4635" height="6615">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="5" systemname="Delay (Animation)" nodename="Delay (Animation)" componentmode="Hidden">
+   <BOUNDS type="Node" left="2895" top="2550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="4" systemname="video_inDX11" filename="video_inDX11.v4p" nodename="machines\video_inDX11.v4p" componentmode="Hidden">
+   <BOUNDS type="Node" left="2880" top="3510" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="enable" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE id="3" systemname="FlipFlop (Animation)" nodename="FlipFlop (Animation)" componentmode="Hidden">
+   <BOUNDS type="Node" left="2895" top="3075" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE id="2" systemname="S (Value)" nodename="S (Value)" componentmode="Hidden">
+   <BOUNDS type="Node" left="4545" top="6825" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="running">
+   </PIN>
+   </NODE>
+   <NODE id="1" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="465" top="3855" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="465" top="3855" width="1740" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="arena.exe">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Executable">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="0" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="555" top="1485" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="555" top="1485" width="1740" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="GameCapture.exe">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Executable">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="7" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="13" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="4" dstpinname="enable">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="3" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="5" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Bang" dstnodeid="8" dstpinname="Execute">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="8" dstpinname="Kill">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="8" dstpinname="File">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="kill" dstnodeid="9" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="12" dstpinname="Kill">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Execute" dstnodeid="12" dstpinname="Execute">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="12" dstpinname="File">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Result" dstnodeid="16" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="IsRunning" dstnodeid="14" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="3290" y="4650">
+   </LINKPOINT>
+   <LINKPOINT x="4585" y="4650">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Error" dstnodeid="15" dstpinname="Input String" linkstyle="PolyLine">
+   </LINK>
+   <PACK Name="dx11" Version="1.0.3">
+   </PACK>
+   <PACK Name="VVVV.Packs.Image-sebl_beta43" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   </PATCH>
