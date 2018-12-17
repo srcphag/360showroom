@@ -1,15 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_vvvv\machines\trig_camlink.v4p" systemname="trig_camlink" filename="D:\_vvvv\machines\trig_camlink.v4p" scrollx="210" scrolly="285">
-   <NODE systemname="CreateNode (VVVV)" nodename="CreateNode (VVVV)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="1785" top="3795" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Create Node" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Node Name" slicecount="1" values="video_inDX9.vp4">
-   </PIN>
-   <PIN pinname="Parent Patch" slicecount="1" values="_init.v4p">
-   </PIN>
-   </NODE>
+   <PATCH nodename="D:\_vvvv\machines\trig_camlink.v4p" systemname="trig_camlink" filename="D:\_vvvv\machines\trig_camlink.v4p" scrollx="210" scrolly="-360">
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="1500" top="1500" width="100" height="100">
    </BOUNDS>
@@ -19,7 +9,7 @@
    <NODE systemname="Delay (Animation)" nodename="Delay (Animation)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="1500" top="2085" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Time" slicecount="1" values="40">
+   <PIN pinname="Time" slicecount="1" values="30">
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -57,8 +47,6 @@
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="1" srcpinname="Bang" dstnodeid="5" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="0" dstpinname="Create Node">
    </LINK>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="3" dstpinname="Input">
    </LINK>

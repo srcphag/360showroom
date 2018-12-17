@@ -9,7 +9,7 @@
    <NODE systemname="Delay (Animation)" nodename="Delay (Animation)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="1500" top="2085" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Time" slicecount="1" values="40">
+   <PIN pinname="Time" slicecount="1" values="30">
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -23,7 +23,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Time" slicecount="1" values="2">
+   <PIN pinname="Time" slicecount="1" values="30">
    </PIN>
    </NODE>
    <LINK srcnodeid="1" srcpinname="Bang" dstnodeid="2" dstpinname="Input">
@@ -50,7 +50,7 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="3" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="9195" top="12450" width="9075" height="9225">
+   <BOUNDS type="Window" left="7515" top="3885" width="4635" height="6615">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.3">
    </PACK>
@@ -59,7 +59,7 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="3420" top="3690" width="100" height="100">
+   <BOUNDS type="Node" left="2640" top="3435" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="load_in">
    </PIN>

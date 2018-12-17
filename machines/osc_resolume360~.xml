@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
    <PATCH nodename="D:\_vvvv\machines\osc_resolume360.v4p" scrollx="240" scrolly="-360" systemname="osc_resolume360" filename="D:\_vvvv\machines\osc_resolume360.v4p">
-   <BOUNDS type="Window" left="16050" top="915" width="12075" height="14325">
+   <BOUNDS type="Window" left="15930" top="600" width="9630" height="14325">
    </BOUNDS>
    <NODE componentmode="InABox" id="44" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="1110" top="13710" type="Node" width="0">
@@ -203,7 +203,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1275" top="2430" width="3000" height="3000">
    </BOUNDS>
-   <PIN pinname="Input Count" slicecount="1" values="33">
+   <PIN pinname="Input Count" slicecount="1" values="36">
    </PIN>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0.555586278438568">
    </PIN>
@@ -273,29 +273,35 @@
    </PIN>
    <PIN pinname="Input 33" visible="1" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Input 34" visible="1">
+   </PIN>
+   <PIN pinname="Input 35" visible="1">
+   </PIN>
+   <PIN pinname="Input 36" visible="1">
+   </PIN>
    </NODE>
    <PACK Name="VVVV.Packs.Image-sebl_beta43" Version="0.2.0">
    </PACK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="128">
    <BOUNDS type="Node" left="1275" top="1335" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="layer1">
+   <PIN pinname="Receive String" slicecount="1" values="layerfader/1">
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="129">
-   <BOUNDS type="Node" left="2205" top="1335" width="100" height="100">
+   <BOUNDS type="Node" left="1875" top="885" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="layer2">
+   <PIN pinname="Receive String" slicecount="1" values="layerfader/2">
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="130">
-   <BOUNDS type="Node" left="3180" top="1350" width="100" height="100">
+   <BOUNDS type="Node" left="2910" top="1320" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="layer3">
+   <PIN pinname="Receive String" slicecount="1" values="layerfader/3">
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -305,13 +311,13 @@
    </BOUNDS>
    <BOUNDS type="Box" left="945" top="3285" width="6510" height="7395">
    </BOUNDS>
-   <PIN pinname="Rows" slicecount="1" values="33">
+   <PIN pinname="Rows" slicecount="1" values="36">
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Input String" slicecount="33" values="/composition/layers/1/video/effects/brightnesscontrast/effect/brightness,/composition/layers/2/video/effects/brightnesscontrast/effect/brightness,/composition/layers/3/video/effects/brightnesscontrast/effect/brightness,/composition/layers/4/video/effects/brightnesscontrast/effect/brightness,/composition/layers/1/video/effects/brightnesscontrast/effect/contrast,/composition/layers/2/video/effects/brightnesscontrast/effect/contrast,/composition/layers/3/video/effects/brightnesscontrast/effect/contrast,/composition/layers/4/video/effects/brightnesscontrast/effect/contrast,/composition/layers/1/video/effects/blur/effect/gaussian,/composition/layers/2/video/effects/blur/effect/gaussian,/composition/layers/3/video/effects/blur/effect/gaussian,/composition/layers/4/video/effects/blur/effect/gaussian,/composition/groups/1/columns/1/connect,/composition/groups/1/columns/2/connect,/composition/groups/1/columns/3/connect,/composition/groups/1/columns/4/connect,/composition/layers/6/video/opacity,/composition/layers/7/video/opacity,/composition/layers/8/video/opacity,/composition/layers/9/video/opacity,/composition/layers/6/video/effects/transform/scale,/composition/layers/7/video/effects/transform/scale,/composition/layers/8/video/effects/transform/scale,/composition/layers/9/video/effects/transform/scale,/composition/layers/10/video/opacity,/composition/layers/11/video/opacity,/composition/layers/12/video/opacity,/composition/layers/13/video/opacity,/composition/layers/10/video/effects/transform/scale,/composition/layers/11/video/effects/transform/scale,/composition/layers/12/video/effects/transform/scale,/composition/layers/13/video/effects/transform/scale,/composition/groups/4/video/opacity">
+   <PIN pinname="Input String" slicecount="36" values="/composition/layers/1/video/effects/brightnesscontrast/effect/brightness,/composition/layers/2/video/effects/brightnesscontrast/effect/brightness,/composition/layers/3/video/effects/brightnesscontrast/effect/brightness,/composition/layers/4/video/effects/brightnesscontrast/effect/brightness,/composition/layers/1/video/effects/brightnesscontrast/effect/contrast,/composition/layers/2/video/effects/brightnesscontrast/effect/contrast,/composition/layers/3/video/effects/brightnesscontrast/effect/contrast,/composition/layers/4/video/effects/brightnesscontrast/effect/contrast,/composition/layers/1/video/effects/blur/effect/gaussian,/composition/layers/2/video/effects/blur/effect/gaussian,/composition/layers/3/video/effects/blur/effect/gaussian,/composition/layers/4/video/effects/blur/effect/gaussian,/composition/columns/1/connect,/composition/columns/2/connect,/composition/columns/3/connect,/composition/columns/4/connect,/composition/layers/6/video/opacity,/composition/layers/7/video/opacity,/composition/layers/8/video/opacity,/composition/layers/9/video/opacity,/composition/layers/6/video/effects/transform/scale,/composition/layers/7/video/effects/transform/scale,/composition/layers/8/video/effects/transform/scale,/composition/layers/9/video/effects/transform/scale,/composition/layers/10/video/opacity,/composition/layers/11/video/opacity,/composition/layers/12/video/opacity,/composition/layers/13/video/opacity,/composition/layers/10/video/effects/transform/scale,/composition/layers/11/video/effects/transform/scale,/composition/layers/12/video/effects/transform/scale,/composition/layers/13/video/effects/transform/scale,/composition/groups/4/video/opacity,/composition/layers/5/video/effects/blur/effect/gaussian,/composition/layers/5/video/effects/brightnesscontrast/effect/brightness,/composition/layers/5/video/effects/brightnesscontrast/effect/contrast">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -923,5 +929,11 @@
    <LINK srcnodeid="161" srcpinname="Input Value" dstnodeid="180" dstpinname="Go To Position">
    </LINK>
    <LINK srcnodeid="180" srcpinname="Position Out" dstnodeid="127" dstpinname="Input 28">
+   </LINK>
+   <LINK srcnodeid="130" srcpinname="Input Value" dstnodeid="127" dstpinname="Input 34">
+   </LINK>
+   <LINK srcnodeid="143" srcpinname="Output" dstnodeid="127" dstpinname="Input 35">
+   </LINK>
+   <LINK srcnodeid="144" srcpinname="Output" dstnodeid="127" dstpinname="Input 36">
    </LINK>
    </PATCH>
