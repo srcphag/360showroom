@@ -1,13 +1,13 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_vvvv\machines\osc_touch360.v4p" scrollx="90" scrolly="720" systemname="osc_touch360" filename="D:\_vvvv\machines\osc_touch360.v4p">
-   <BOUNDS type="Window" left="-225" top="1260" width="20640" height="16500">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="D:\admira-showroom\machines\osc_touch360.v4p" scrollx="90" scrolly="-360" systemname="osc_touch360" filename="D:\_vvvv\machines\osc_touch360.v4p">
+   <BOUNDS type="Window" left="720" top="2745" width="20640" height="12165">
    </BOUNDS>
    <NODE componentmode="InABox" id="21" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="2295" top="630" type="Node" width="0">
+   <BOUNDS height="0" left="2295" top="330" type="Node" width="0">
    </BOUNDS>
    <BOUNDS height="160" left="22050" top="16170" type="Window" width="215">
    </BOUNDS>
-   <BOUNDS height="240" left="2295" top="630" type="Box" width="510">
+   <BOUNDS height="240" left="2295" top="330" type="Box" width="510">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="||">
    </PIN>
@@ -21,11 +21,11 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="20" nodename="IOBox (Enumerations)" systemname="IOBox (Enumerations)">
-   <BOUNDS height="0" left="3285" top="600" type="Node" width="0">
+   <BOUNDS height="0" left="3285" top="300" type="Node" width="0">
    </BOUNDS>
    <BOUNDS height="160" left="23595" top="18045" type="Window" width="215">
    </BOUNDS>
-   <BOUNDS height="240" left="3285" top="600" type="Box" width="1245">
+   <BOUNDS height="240" left="3285" top="300" type="Box" width="1245">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Queue Mode|">
    </PIN>
@@ -35,9 +35,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="16" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="255" left="1470" top="630" type="Node" width="1785">
+   <BOUNDS height="255" left="1455" top="300" type="Node" width="1785">
    </BOUNDS>
-   <BOUNDS height="285" left="1470" top="630" type="Box" width="780">
+   <BOUNDS height="285" left="1455" top="300" type="Box" width="780">
    </BOUNDS>
    <BOUNDS height="160" left="0" top="0" type="Window" width="215">
    </BOUNDS>
@@ -51,17 +51,17 @@
    <NODE componentmode="InABox" hiddenwhenlocked="0" id="14" nodename="IOBox (String)" systemname="IOBox (String)">
    <PIN pinname="Input String" visible="1" slicecount="1" encoded="1" values="I2J1bmRsZQAAAAAAAAAAAQAAACQvdGlja3RhY2sAAAAscwAAMjAxMy4wMS4wNy0wMi40MC41NgA=">
    </PIN>
-   <BOUNDS height="0" left="870" top="2340" type="Node" width="0">
+   <BOUNDS height="0" left="870" top="2490" type="Node" width="0">
    </BOUNDS>
    <BOUNDS height="160" left="13920" top="16215" type="Window" width="215">
    </BOUNDS>
-   <BOUNDS height="330" left="870" top="2340" type="Box" width="6300">
+   <BOUNDS height="330" left="870" top="2490" type="Box" width="6300">
    </BOUNDS>
    <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE id="10" nodename="UDP (Network Server)" systemname="UDP (Network Server)">
-   <BOUNDS height="0" left="2595" top="1230" type="Node" width="0">
+   <BOUNDS height="0" left="2595" top="930" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Do Send" visible="1">
    </PIN>
@@ -83,9 +83,9 @@
    </PIN>
    </NODE>
    <LINK dstnodeid="10" dstpinname="Local Port" srcnodeid="21" srcpinname="Y Output Value" linkstyle="Bezier">
-   <LINKPOINT x="2355" y="1035">
+   <LINKPOINT x="2355" y="735">
    </LINKPOINT>
-   <LINKPOINT x="2745" y="1035">
+   <LINKPOINT x="2745" y="735">
    </LINKPOINT>
    </LINK>
    <LINK dstnodeid="10" dstpinname="Queue Mode" srcnodeid="20" srcpinname="Output Enum">
@@ -95,7 +95,7 @@
    </PIN>
    <PIN pinname="Set" visible="1">
    </PIN>
-   <BOUNDS height="0" left="2595" top="1935" type="Node" width="0">
+   <BOUNDS height="0" left="2595" top="1635" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -107,1609 +107,27 @@
    <NODE systemname="AsString (Raw)" nodename="AsString (Raw)" componentmode="Hidden" id="7">
    <BOUNDS type="Node" left="885" top="1995" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    <PIN pinname="Encoding" slicecount="1" values="us-ascii">
    </PIN>
    </NODE>
-   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="7" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="2595" y="2085">
-   </LINKPOINT>
-   <LINKPOINT x="1050" y="1320">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="14" dstpinname="Input String">
-   </LINK>
-   <PACK Name="dx11" Version="1.0.3">
+   <PACK Name="dx11" Version="1.3.1">
    </PACK>
-   <PACK Name="addonpack" Version="35.0.0">
+   <PACK Name="addonpack" Version="38.1.0">
    </PACK>
    <PACK Name="VVVV.Packs.Image-sebl_beta43" Version="0.2.0">
    </PACK>
-   <NODE componentmode="InABox" id="877" nodename="IOBOX (VALUE ADVANCED)">
-   <BOUNDS height="0" left="1020" top="24255" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="9135" top="7740" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="240" left="1020" top="24255" type="Box" width="570">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="9000">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="99999">
-   </PIN>
-   </NODE>
-   <NODE id="876" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
-   <BOUNDS height="0" left="495" top="24675" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Do Send" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remote Port" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.139">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="876" dstpinname="Remote Port" linkstyle="PolyLine" srcnodeid="877" srcpinname="Y Output Value">
-   </LINK>
-   <NODE id="875" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
-   <BOUNDS height="0" left="480" top="23880" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="OSCMessage" visible="1">
-   </PIN>
-   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="875" srcpinname="OSCMessage" dstnodeid="876" dstpinname="Input">
-   </LINK>
-   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="874">
-   <BOUNDS type="Node" left="1440" top="23400" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="874" srcpinname="Output" dstnodeid="875" dstpinname="Arguments">
-   </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="878">
-   <BOUNDS type="Node" left="1440" top="23055" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="levelout">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="878" srcpinname="Input Value" dstnodeid="874" dstpinname="Input">
-   </LINK>
-   <NODE componentmode="InABox" id="879" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="0" left="465" top="22620" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="33945" top="15495" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="315" left="465" top="22620" type="Box" width="2985">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/levelsout">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="879" srcpinname="Output String" dstnodeid="875" dstpinname="Address">
-   </LINK>
-   <NODE componentmode="InABox" id="885" nodename="IOBOX (VALUE ADVANCED)">
-   <BOUNDS height="0" left="5355" top="24285" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="9135" top="7740" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="240" left="5355" top="24285" type="Box" width="570">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="9000">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="99999">
-   </PIN>
-   </NODE>
-   <NODE id="884" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
-   <BOUNDS height="0" left="4830" top="24705" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Do Send" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remote Port" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.139">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="884" dstpinname="Remote Port" linkstyle="PolyLine" srcnodeid="885" srcpinname="Y Output Value">
-   </LINK>
-   <NODE id="883" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
-   <BOUNDS height="0" left="4815" top="23910" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="OSCMessage" visible="1">
-   </PIN>
-   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="883" srcpinname="OSCMessage" dstnodeid="884" dstpinname="Input">
-   </LINK>
-   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="882">
-   <BOUNDS type="Node" left="5775" top="23430" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="882" srcpinname="Output" dstnodeid="883" dstpinname="Arguments">
-   </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="881">
-   <BOUNDS type="Node" left="5775" top="23085" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="levelin">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="881" srcpinname="Input Value" dstnodeid="882" dstpinname="Input">
-   </LINK>
-   <NODE componentmode="InABox" id="880" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="0" left="4800" top="22650" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="33945" top="15495" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="315" left="4800" top="22650" type="Box" width="2985">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/levelsin">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="880" srcpinname="Output String" dstnodeid="883" dstpinname="Address">
-   </LINK>
-   <NODE componentmode="InABox" id="899" nodename="IOBOX (VALUE ADVANCED)">
-   <BOUNDS height="0" left="8820" top="24285" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="9135" top="7740" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="240" left="8820" top="24285" type="Box" width="570">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="9000">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="99999">
-   </PIN>
-   </NODE>
-   <NODE id="898" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
-   <BOUNDS height="0" left="8295" top="24705" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Do Send" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remote Port" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.137">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="898" dstpinname="Remote Port" linkstyle="PolyLine" srcnodeid="899" srcpinname="Y Output Value">
-   </LINK>
-   <NODE id="897" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
-   <BOUNDS height="0" left="8280" top="23910" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="OSCMessage" visible="1">
-   </PIN>
-   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="897" srcpinname="OSCMessage" dstnodeid="898" dstpinname="Input">
-   </LINK>
-   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="896">
-   <BOUNDS type="Node" left="9240" top="23430" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="896" srcpinname="Output" dstnodeid="897" dstpinname="Arguments">
-   </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="895">
-   <BOUNDS type="Node" left="9240" top="23085" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="videolenght">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="895" srcpinname="Input Value" dstnodeid="896" dstpinname="Input">
-   </LINK>
-   <NODE componentmode="InABox" id="894" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="0" left="8265" top="22650" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="33945" top="15495" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="315" left="8265" top="22650" type="Box" width="2985">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/videolenght">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="894" srcpinname="Output String" dstnodeid="897" dstpinname="Address">
-   </LINK>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="906">
-   <BOUNDS type="Node" left="15435" top="22560" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="15435" top="22560" width="2325" height="315">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="192.168.1.136">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="906" srcpinname="Output String" dstnodeid="898" dstpinname="Remote Host">
-   </LINK>
-   <LINK srcnodeid="906" srcpinname="Output String" dstnodeid="884" dstpinname="Remote Host">
-   </LINK>
-   <LINK srcnodeid="906" srcpinname="Output String" dstnodeid="876" dstpinname="Remote Host">
-   </LINK>
-   <NODE componentmode="InABox" id="912" nodename="IOBOX (VALUE ADVANCED)">
-   <BOUNDS height="0" left="12405" top="24225" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="9135" top="7740" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="240" left="12405" top="24225" type="Box" width="570">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="9000">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="99999">
-   </PIN>
-   </NODE>
-   <NODE id="911" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
-   <BOUNDS height="0" left="11880" top="24645" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Do Send" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remote Port" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.137">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="911" dstpinname="Remote Port" linkstyle="PolyLine" srcnodeid="912" srcpinname="Y Output Value">
-   </LINK>
-   <NODE id="910" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
-   <BOUNDS height="0" left="11865" top="23850" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="OSCMessage" visible="1">
-   </PIN>
-   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="910" srcpinname="OSCMessage" dstnodeid="911" dstpinname="Input">
-   </LINK>
-   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="909">
-   <BOUNDS type="Node" left="12825" top="23370" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="909" srcpinname="Output" dstnodeid="910" dstpinname="Arguments">
-   </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="908">
-   <BOUNDS type="Node" left="12825" top="23025" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="splay">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="908" srcpinname="Input Value" dstnodeid="909" dstpinname="Input">
-   </LINK>
-   <NODE componentmode="InABox" id="907" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="0" left="11850" top="22590" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="33945" top="15495" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="315" left="11850" top="22590" type="Box" width="2985">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/play">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="907" srcpinname="Output String" dstnodeid="910" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="906" srcpinname="Output String" dstnodeid="911" dstpinname="Remote Host">
-   </LINK>
-   <NODE componentmode="InABox" id="930" nodename="IOBOX (VALUE ADVANCED)">
-   <BOUNDS height="0" left="5385" top="27090" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="9135" top="7740" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="240" left="5385" top="27090" type="Box" width="570">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="9000">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="99999">
-   </PIN>
-   </NODE>
-   <NODE id="929" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
-   <BOUNDS height="0" left="4860" top="27510" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Do Send" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remote Port" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.139">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="929" dstpinname="Remote Port" linkstyle="PolyLine" srcnodeid="930" srcpinname="Y Output Value">
-   </LINK>
-   <NODE id="928" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
-   <BOUNDS height="0" left="4845" top="26715" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="OSCMessage" visible="1">
-   </PIN>
-   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="928" srcpinname="OSCMessage" dstnodeid="929" dstpinname="Input">
-   </LINK>
-   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="927">
-   <BOUNDS type="Node" left="5805" top="26235" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="927" srcpinname="Output" dstnodeid="928" dstpinname="Arguments">
-   </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="926">
-   <BOUNDS type="Node" left="5805" top="25890" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="sled">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="926" srcpinname="Input Value" dstnodeid="927" dstpinname="Input">
-   </LINK>
-   <NODE componentmode="InABox" id="925" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="0" left="4830" top="25455" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="33945" top="15495" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="315" left="4830" top="25455" type="Box" width="2985">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/led">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="925" srcpinname="Output String" dstnodeid="928" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="906" srcpinname="Output String" dstnodeid="929" dstpinname="Remote Host">
-   </LINK>
-   <NODE componentmode="InABox" id="1033" nodename="IOBOX (VALUE ADVANCED)">
-   <BOUNDS height="0" left="1230" top="38460" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="9135" top="7740" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="240" left="1230" top="38460" type="Box" width="570">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="9000">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="99999">
-   </PIN>
-   </NODE>
-   <NODE id="1032" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
-   <BOUNDS height="0" left="705" top="38880" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Do Send" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remote Port" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.139">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="1032" dstpinname="Remote Port" linkstyle="PolyLine" srcnodeid="1033" srcpinname="Y Output Value">
-   </LINK>
-   <NODE id="1031" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
-   <BOUNDS height="0" left="690" top="38085" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="OSCMessage" visible="1">
-   </PIN>
-   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1031" srcpinname="OSCMessage" dstnodeid="1032" dstpinname="Input">
-   </LINK>
-   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="1030">
-   <BOUNDS type="Node" left="1650" top="37605" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1030" srcpinname="Output" dstnodeid="1031" dstpinname="Arguments">
-   </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1029">
-   <BOUNDS type="Node" left="1650" top="37260" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="canvasop">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1029" srcpinname="Input Value" dstnodeid="1030" dstpinname="Input">
-   </LINK>
-   <NODE componentmode="InABox" id="1028" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="0" left="675" top="36825" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="33945" top="15495" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="315" left="675" top="36825" type="Box" width="2985">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/canvasop">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1028" srcpinname="Output String" dstnodeid="1031" dstpinname="Address">
-   </LINK>
-   <NODE componentmode="InABox" id="1027" nodename="IOBOX (VALUE ADVANCED)">
-   <BOUNDS height="0" left="5565" top="38490" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="9135" top="7740" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="240" left="5565" top="38490" type="Box" width="570">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="9000">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="99999">
-   </PIN>
-   </NODE>
-   <NODE id="1026" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
-   <BOUNDS height="0" left="5040" top="38910" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Do Send" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remote Port" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.139">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="1026" dstpinname="Remote Port" linkstyle="PolyLine" srcnodeid="1027" srcpinname="Y Output Value">
-   </LINK>
-   <NODE id="1025" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
-   <BOUNDS height="0" left="5025" top="38115" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="OSCMessage" visible="1">
-   </PIN>
-   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1025" srcpinname="OSCMessage" dstnodeid="1026" dstpinname="Input">
-   </LINK>
-   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="1024">
-   <BOUNDS type="Node" left="5985" top="37635" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1024" srcpinname="Output" dstnodeid="1025" dstpinname="Arguments">
-   </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1023">
-   <BOUNDS type="Node" left="5985" top="37290" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="ledscence0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1023" srcpinname="Input Value" dstnodeid="1024" dstpinname="Input">
-   </LINK>
-   <NODE componentmode="InABox" id="1022" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="0" left="5010" top="36855" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="33945" top="15495" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="315" left="5010" top="36855" type="Box" width="2985">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/ledscene0">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1022" srcpinname="Output String" dstnodeid="1025" dstpinname="Address">
-   </LINK>
-   <NODE componentmode="InABox" id="1021" nodename="IOBOX (VALUE ADVANCED)">
-   <BOUNDS height="0" left="9030" top="38490" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="9135" top="7740" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="240" left="9030" top="38490" type="Box" width="570">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="9000">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="99999">
-   </PIN>
-   </NODE>
-   <NODE id="1020" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
-   <BOUNDS height="0" left="8505" top="38910" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Do Send" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remote Port" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.137">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="1020" dstpinname="Remote Port" linkstyle="PolyLine" srcnodeid="1021" srcpinname="Y Output Value">
-   </LINK>
-   <NODE id="1019" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
-   <BOUNDS height="0" left="8490" top="38115" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="OSCMessage" visible="1">
-   </PIN>
-   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1019" srcpinname="OSCMessage" dstnodeid="1020" dstpinname="Input">
-   </LINK>
-   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="1018">
-   <BOUNDS type="Node" left="9450" top="37635" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1018" srcpinname="Output" dstnodeid="1019" dstpinname="Arguments">
-   </LINK>
-   <NODE componentmode="InABox" id="1017" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="0" left="8475" top="36855" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="33945" top="15495" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="315" left="8475" top="36855" type="Box" width="2985">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/ledscene1">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1017" srcpinname="Output String" dstnodeid="1019" dstpinname="Address">
-   </LINK>
-   <NODE componentmode="InABox" id="1016" nodename="IOBOX (VALUE ADVANCED)">
-   <BOUNDS height="0" left="12615" top="38430" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="9135" top="7740" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="240" left="12615" top="38430" type="Box" width="570">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="9000">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="99999">
-   </PIN>
-   </NODE>
-   <NODE id="1015" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
-   <BOUNDS height="0" left="12090" top="38850" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Do Send" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remote Port" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.137">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="1015" dstpinname="Remote Port" linkstyle="PolyLine" srcnodeid="1016" srcpinname="Y Output Value">
-   </LINK>
-   <NODE id="1014" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
-   <BOUNDS height="0" left="12075" top="38055" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="OSCMessage" visible="1">
-   </PIN>
-   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1014" srcpinname="OSCMessage" dstnodeid="1015" dstpinname="Input">
-   </LINK>
-   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="1013">
-   <BOUNDS type="Node" left="13035" top="37575" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1013" srcpinname="Output" dstnodeid="1014" dstpinname="Arguments">
-   </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1012">
-   <BOUNDS type="Node" left="13035" top="37230" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="ledscence2">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1012" srcpinname="Input Value" dstnodeid="1013" dstpinname="Input">
-   </LINK>
-   <NODE componentmode="InABox" id="1011" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="0" left="12060" top="36795" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="33945" top="15495" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="315" left="12060" top="36795" type="Box" width="2985">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/ledscene2">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1011" srcpinname="Output String" dstnodeid="1014" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="906" srcpinname="Output String" dstnodeid="1032" dstpinname="Remote Host">
-   </LINK>
-   <NODE componentmode="InABox" id="1040" nodename="IOBOX (VALUE ADVANCED)">
-   <BOUNDS height="0" left="1215" top="41070" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="9135" top="7740" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="240" left="1215" top="41070" type="Box" width="570">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="9000">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="99999">
-   </PIN>
-   </NODE>
-   <NODE id="1039" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
-   <BOUNDS height="0" left="690" top="41490" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Do Send" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remote Port" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.137">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="1039" dstpinname="Remote Port" linkstyle="PolyLine" srcnodeid="1040" srcpinname="Y Output Value">
-   </LINK>
-   <NODE id="1038" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
-   <BOUNDS height="0" left="675" top="40695" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="OSCMessage" visible="1">
-   </PIN>
-   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1038" srcpinname="OSCMessage" dstnodeid="1039" dstpinname="Input">
-   </LINK>
-   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="1037">
-   <BOUNDS type="Node" left="1635" top="40215" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1037" srcpinname="Output" dstnodeid="1038" dstpinname="Arguments">
-   </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1036">
-   <BOUNDS type="Node" left="1635" top="39870" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="ledscence3">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1036" srcpinname="Input Value" dstnodeid="1037" dstpinname="Input">
-   </LINK>
-   <NODE componentmode="InABox" id="1035" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="0" left="660" top="39435" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="33945" top="15495" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="315" left="660" top="39435" type="Box" width="2985">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/ledscene3">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1035" srcpinname="Output String" dstnodeid="1038" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="906" srcpinname="Output String" dstnodeid="1026" dstpinname="Remote Host">
-   </LINK>
-   <LINK srcnodeid="906" srcpinname="Output String" dstnodeid="1020" dstpinname="Remote Host">
-   </LINK>
-   <LINK srcnodeid="906" srcpinname="Output String" dstnodeid="1015" dstpinname="Remote Host">
-   </LINK>
-   <LINK srcnodeid="906" srcpinname="Output String" dstnodeid="1039" dstpinname="Remote Host">
-   </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1041">
-   <BOUNDS type="Node" left="9435" top="37245" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="ledscence1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1041" srcpinname="Input Value" dstnodeid="1018" dstpinname="Input">
-   </LINK>
    <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="1080">
-   <BOUNDS type="Node" left="3255" top="1920" width="100" height="100">
+   <BOUNDS type="Node" left="3375" top="2205" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Send String" slicecount="1" values="osc_input">
    </PIN>
    </NODE>
-   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="1080" dstpinname="Input Value">
-   </LINK>
-   <NODE id="986" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS type="Node" height="0" left="11955" top="34170" width="0">
-   </BOUNDS>
-   <BOUNDS type="Box" height="315" left="11955" top="34170" width="2985">
-   </BOUNDS>
-   <BOUNDS type="Window" height="160" left="33945" top="15495" width="215">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/ledon">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
-   <NODE id="1034" systemname="R (Value)" nodename="R (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="9945" top="33195" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="reset">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE id="1010" systemname="FlipFlop (Animation)" nodename="FlipFlop (Animation)" componentmode="Hidden">
-   <BOUNDS type="Node" left="9360" top="33765" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Set" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Reset" slicecount="1" visible="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE id="987" systemname="R (Value)" nodename="R (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="12930" top="34605" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="ledon">
-   </PIN>
-   </NODE>
-   <NODE id="988" systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="12930" top="34950" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE id="989" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
-   <BOUNDS type="Node" height="0" left="11970" top="35430" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="OSCMessage" visible="1">
-   </PIN>
-   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE id="990" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
-   <BOUNDS type="Node" height="0" left="11985" top="36225" width="0">
-   </BOUNDS>
-   <PIN pinname="Do Send" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remote Port" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.137">
-   </PIN>
-   </NODE>
-   <NODE id="991" componentmode="InABox" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" height="0" left="12510" top="35805" width="0">
-   </BOUNDS>
-   <BOUNDS type="Box" height="240" left="12510" top="35805" width="570">
-   </BOUNDS>
-   <BOUNDS type="Window" height="160" left="9135" top="7740" width="215">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="9000">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="99999">
-   </PIN>
-   </NODE>
-   <NODE id="992" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS type="Node" height="0" left="8370" top="34230" width="0">
-   </BOUNDS>
-   <BOUNDS type="Box" height="315" left="8370" top="34230" width="2985">
-   </BOUNDS>
-   <BOUNDS type="Window" height="160" left="33945" top="15495" width="215">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/recive">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
-   <NODE id="994" systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="9345" top="35010" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE id="995" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
-   <BOUNDS type="Node" height="0" left="8385" top="35490" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="OSCMessage" visible="1">
-   </PIN>
-   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE id="996" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
-   <BOUNDS type="Node" height="0" left="8400" top="36285" width="0">
-   </BOUNDS>
-   <PIN pinname="Do Send" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remote Port" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.137">
-   </PIN>
-   </NODE>
-   <NODE id="997" componentmode="InABox" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" height="0" left="8925" top="35865" width="0">
-   </BOUNDS>
-   <BOUNDS type="Box" height="240" left="8925" top="35865" width="570">
-   </BOUNDS>
-   <BOUNDS type="Window" height="160" left="9135" top="7740" width="215">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="9000">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="99999">
-   </PIN>
-   </NODE>
-   <NODE id="998" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS type="Node" height="0" left="4905" top="34230" width="0">
-   </BOUNDS>
-   <BOUNDS type="Box" height="315" left="4905" top="34230" width="2985">
-   </BOUNDS>
-   <BOUNDS type="Window" height="160" left="33945" top="15495" width="215">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/volumein">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
-   <NODE id="999" systemname="R (Value)" nodename="R (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="5880" top="34665" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="volumein">
-   </PIN>
-   </NODE>
-   <NODE id="1000" systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="5880" top="35010" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE id="1001" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
-   <BOUNDS type="Node" height="0" left="4920" top="35490" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="OSCMessage" visible="1">
-   </PIN>
-   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE id="1002" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
-   <BOUNDS type="Node" height="0" left="4935" top="36285" width="0">
-   </BOUNDS>
-   <PIN pinname="Do Send" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remote Port" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.139">
-   </PIN>
-   </NODE>
-   <NODE id="1003" componentmode="InABox" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" height="0" left="5460" top="35865" width="0">
-   </BOUNDS>
-   <BOUNDS type="Box" height="240" left="5460" top="35865" width="570">
-   </BOUNDS>
-   <BOUNDS type="Window" height="160" left="9135" top="7740" width="215">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="9000">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="99999">
-   </PIN>
-   </NODE>
-   <NODE id="1004" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS type="Node" height="0" left="570" top="34200" width="0">
-   </BOUNDS>
-   <BOUNDS type="Box" height="315" left="570" top="34200" width="2985">
-   </BOUNDS>
-   <BOUNDS type="Window" height="160" left="33945" top="15495" width="215">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/volume">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
-   <NODE id="1005" systemname="R (Value)" nodename="R (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="1545" top="34635" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="volume">
-   </PIN>
-   </NODE>
-   <NODE id="1006" systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="1545" top="34980" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE id="1007" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
-   <BOUNDS type="Node" height="0" left="585" top="35460" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="OSCMessage" visible="1">
-   </PIN>
-   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE id="1008" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
-   <BOUNDS type="Node" height="0" left="600" top="36255" width="0">
-   </BOUNDS>
-   <PIN pinname="Do Send" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remote Port" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.139">
-   </PIN>
-   </NODE>
-   <NODE id="1009" componentmode="InABox" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" height="0" left="1125" top="35835" width="0">
-   </BOUNDS>
-   <BOUNDS type="Box" height="240" left="1125" top="35835" width="570">
-   </BOUNDS>
-   <BOUNDS type="Window" height="160" left="9135" top="7740" width="215">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="9000">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="99999">
-   </PIN>
-   </NODE>
-   <NODE id="962" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS type="Node" height="0" left="11940" top="31275" width="0">
-   </BOUNDS>
-   <BOUNDS type="Box" height="315" left="11940" top="31275" width="2985">
-   </BOUNDS>
-   <BOUNDS type="Window" height="160" left="33945" top="15495" width="215">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/canvas4">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
-   <NODE id="963" systemname="R (Value)" nodename="R (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="12915" top="31710" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="canvas4">
-   </PIN>
-   </NODE>
-   <NODE id="964" systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="12915" top="32055" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE id="965" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
-   <BOUNDS type="Node" height="0" left="11955" top="32535" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="OSCMessage" visible="1">
-   </PIN>
-   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE id="966" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
-   <BOUNDS type="Node" height="0" left="11970" top="33330" width="0">
-   </BOUNDS>
-   <PIN pinname="Do Send" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remote Port" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.137">
-   </PIN>
-   </NODE>
-   <NODE id="967" componentmode="InABox" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" height="0" left="12495" top="32910" width="0">
-   </BOUNDS>
-   <BOUNDS type="Box" height="240" left="12495" top="32910" width="570">
-   </BOUNDS>
-   <BOUNDS type="Window" height="160" left="9135" top="7740" width="215">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="9000">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="99999">
-   </PIN>
-   </NODE>
-   <NODE id="968" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS type="Node" height="0" left="8355" top="31335" width="0">
-   </BOUNDS>
-   <BOUNDS type="Box" height="315" left="8355" top="31335" width="2985">
-   </BOUNDS>
-   <BOUNDS type="Window" height="160" left="33945" top="15495" width="215">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/canvas3">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
-   <NODE id="969" systemname="R (Value)" nodename="R (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="9330" top="31770" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="canvas3">
-   </PIN>
-   </NODE>
-   <NODE id="970" systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="9330" top="32115" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE id="971" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
-   <BOUNDS type="Node" height="0" left="8370" top="32595" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="OSCMessage" visible="1">
-   </PIN>
-   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE id="972" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
-   <BOUNDS type="Node" height="0" left="8385" top="33390" width="0">
-   </BOUNDS>
-   <PIN pinname="Do Send" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remote Port" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.137">
-   </PIN>
-   </NODE>
-   <NODE id="973" componentmode="InABox" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" height="0" left="8910" top="32970" width="0">
-   </BOUNDS>
-   <BOUNDS type="Box" height="240" left="8910" top="32970" width="570">
-   </BOUNDS>
-   <BOUNDS type="Window" height="160" left="9135" top="7740" width="215">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="9000">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="99999">
-   </PIN>
-   </NODE>
-   <NODE id="974" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS type="Node" height="0" left="4890" top="31335" width="0">
-   </BOUNDS>
-   <BOUNDS type="Box" height="315" left="4890" top="31335" width="2985">
-   </BOUNDS>
-   <BOUNDS type="Window" height="160" left="33945" top="15495" width="215">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/canvas2">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
-   <NODE id="975" systemname="R (Value)" nodename="R (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="5865" top="31770" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="canvas2">
-   </PIN>
-   </NODE>
-   <NODE id="976" systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="5865" top="32115" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE id="977" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
-   <BOUNDS type="Node" height="0" left="4905" top="32595" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="OSCMessage" visible="1">
-   </PIN>
-   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE id="978" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
-   <BOUNDS type="Node" height="0" left="4920" top="33390" width="0">
-   </BOUNDS>
-   <PIN pinname="Do Send" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remote Port" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.139">
-   </PIN>
-   </NODE>
-   <NODE id="979" componentmode="InABox" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" height="0" left="5445" top="32970" width="0">
-   </BOUNDS>
-   <BOUNDS type="Box" height="240" left="5445" top="32970" width="570">
-   </BOUNDS>
-   <BOUNDS type="Window" height="160" left="9135" top="7740" width="215">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="9000">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="99999">
-   </PIN>
-   </NODE>
-   <NODE id="980" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS type="Node" height="0" left="555" top="31305" width="0">
-   </BOUNDS>
-   <BOUNDS type="Box" height="315" left="555" top="31305" width="2985">
-   </BOUNDS>
-   <BOUNDS type="Window" height="160" left="33945" top="15495" width="215">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/canvas1">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
-   <NODE id="981" systemname="R (Value)" nodename="R (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="1530" top="31740" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="canvas1">
-   </PIN>
-   </NODE>
-   <NODE id="982" systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="1530" top="32085" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE id="983" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
-   <BOUNDS type="Node" height="0" left="570" top="32565" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="OSCMessage" visible="1">
-   </PIN>
-   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE id="984" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
-   <BOUNDS type="Node" height="0" left="585" top="33360" width="0">
-   </BOUNDS>
-   <PIN pinname="Do Send" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remote Port" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.139">
-   </PIN>
-   </NODE>
-   <NODE id="985" componentmode="InABox" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" height="0" left="1110" top="32940" width="0">
-   </BOUNDS>
-   <BOUNDS type="Box" height="240" left="1110" top="32940" width="570">
-   </BOUNDS>
-   <BOUNDS type="Window" height="160" left="9135" top="7740" width="215">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="9000">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="99999">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="985" srcpinname="Y Output Value" dstnodeid="984" dstpinname="Remote Port" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="906" srcpinname="Output String" dstnodeid="984" dstpinname="Remote Host">
-   </LINK>
-   <LINK srcnodeid="983" srcpinname="OSCMessage" dstnodeid="984" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="980" srcpinname="Output String" dstnodeid="983" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="982" srcpinname="Output" dstnodeid="983" dstpinname="Arguments">
-   </LINK>
-   <LINK srcnodeid="981" srcpinname="Input Value" dstnodeid="982" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="979" srcpinname="Y Output Value" dstnodeid="978" dstpinname="Remote Port" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="906" srcpinname="Output String" dstnodeid="978" dstpinname="Remote Host">
-   </LINK>
-   <LINK srcnodeid="977" srcpinname="OSCMessage" dstnodeid="978" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="974" srcpinname="Output String" dstnodeid="977" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="976" srcpinname="Output" dstnodeid="977" dstpinname="Arguments">
-   </LINK>
-   <LINK srcnodeid="975" srcpinname="Input Value" dstnodeid="976" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="973" srcpinname="Y Output Value" dstnodeid="972" dstpinname="Remote Port" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="906" srcpinname="Output String" dstnodeid="972" dstpinname="Remote Host">
-   </LINK>
-   <LINK srcnodeid="971" srcpinname="OSCMessage" dstnodeid="972" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="968" srcpinname="Output String" dstnodeid="971" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="970" srcpinname="Output" dstnodeid="971" dstpinname="Arguments">
-   </LINK>
-   <LINK srcnodeid="969" srcpinname="Input Value" dstnodeid="970" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="967" srcpinname="Y Output Value" dstnodeid="966" dstpinname="Remote Port" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="906" srcpinname="Output String" dstnodeid="966" dstpinname="Remote Host">
-   </LINK>
-   <LINK srcnodeid="965" srcpinname="OSCMessage" dstnodeid="966" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="962" srcpinname="Output String" dstnodeid="965" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="964" srcpinname="Output" dstnodeid="965" dstpinname="Arguments">
-   </LINK>
-   <LINK srcnodeid="963" srcpinname="Input Value" dstnodeid="964" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1009" srcpinname="Y Output Value" dstnodeid="1008" dstpinname="Remote Port" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="906" srcpinname="Output String" dstnodeid="1008" dstpinname="Remote Host">
-   </LINK>
-   <LINK srcnodeid="1007" srcpinname="OSCMessage" dstnodeid="1008" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1004" srcpinname="Output String" dstnodeid="1007" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="1006" srcpinname="Output" dstnodeid="1007" dstpinname="Arguments">
-   </LINK>
-   <LINK srcnodeid="1005" srcpinname="Input Value" dstnodeid="1006" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1003" srcpinname="Y Output Value" dstnodeid="1002" dstpinname="Remote Port" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="906" srcpinname="Output String" dstnodeid="1002" dstpinname="Remote Host">
-   </LINK>
-   <LINK srcnodeid="1001" srcpinname="OSCMessage" dstnodeid="1002" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="998" srcpinname="Output String" dstnodeid="1001" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="1000" srcpinname="Output" dstnodeid="1001" dstpinname="Arguments">
-   </LINK>
-   <LINK srcnodeid="999" srcpinname="Input Value" dstnodeid="1000" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="997" srcpinname="Y Output Value" dstnodeid="996" dstpinname="Remote Port" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="906" srcpinname="Output String" dstnodeid="996" dstpinname="Remote Host">
-   </LINK>
-   <LINK srcnodeid="995" srcpinname="OSCMessage" dstnodeid="996" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="992" srcpinname="Output String" dstnodeid="995" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="994" srcpinname="Output" dstnodeid="995" dstpinname="Arguments">
-   </LINK>
-   <LINK srcnodeid="1010" srcpinname="Output" dstnodeid="994" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="991" srcpinname="Y Output Value" dstnodeid="990" dstpinname="Remote Port" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="906" srcpinname="Output String" dstnodeid="990" dstpinname="Remote Host">
-   </LINK>
-   <LINK srcnodeid="989" srcpinname="OSCMessage" dstnodeid="990" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="986" srcpinname="Output String" dstnodeid="989" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="988" srcpinname="Output" dstnodeid="989" dstpinname="Arguments">
-   </LINK>
-   <LINK srcnodeid="987" srcpinname="Input Value" dstnodeid="988" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1034" srcpinname="Input Value" dstnodeid="1010" dstpinname="Reset">
-   </LINK>
-   <LINK srcnodeid="908" srcpinname="Input Value" dstnodeid="1010" dstpinname="Set">
-   </LINK>
    <NODE systemname="osc_communicator" filename="osc_communicator.v4p" nodename="osc_communicator.v4p" componentmode="Hidden" id="1629">
    <BOUNDS type="Node" left="1170" top="3405" width="100" height="100">
    </BOUNDS>
@@ -2601,6 +1019,8 @@
    </PIN>
    <PIN pinname="receiving" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="9210" top="2970" width="9000" height="6000">
+   </BOUNDS>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="1556">
    <BOUNDS type="Node" left="9255" top="2940" width="100" height="100">
@@ -4087,9 +2507,9 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="1640">
-   <BOUNDS type="Node" left="11055" top="8940" width="100" height="100">
+   <BOUNDS type="Node" left="11325" top="8940" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="11055" top="8940" width="795" height="240">
+   <BOUNDS type="Box" left="11325" top="8940" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -4111,954 +2531,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="1642" srcpinname="receiving" dstnodeid="1639" dstpinname="Y Input Value">
-   </LINK>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1663">
-   <BOUNDS type="Node" left="690" top="11880" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/groups/4/bypassed">
-   </PIN>
-   <BOUNDS type="Box" left="690" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1662">
-   <BOUNDS type="Node" left="1875" top="11430" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="swDesk">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <NODE id="1667" systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="690" top="12315" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="direction" slicecount="1" pintype="Input" visible="1" values="/composition/groups/3/bypassed">
-   </PIN>
-   <PIN pinname="argument&cr;&lf;" visible="1" pintype="Input" slicecount="1" values="0">
-   </PIN>
-   <BOUNDS type="Box" left="690" top="12315" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="16080" top="6090" width="9000" height="6000">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="port" pintype="Input" visible="1" slicecount="1" values="7000">
-   </PIN>
-   <PIN pinname="switch" pintype="Input" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Window Handle" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Patch" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1669">
-   <BOUNDS type="Node" left="3345" top="11880" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/1/video/effects/brightnesscontrast/effect/brightness">
-   </PIN>
-   <BOUNDS type="Box" left="3345" top="11880">
-   </BOUNDS>
-   <BOUNDS type="Window" left="16080" top="6090" width="5250" height="4650">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1668">
-   <BOUNDS type="Node" left="4335" top="11475" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="videoBright">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1668" srcpinname="Input Value" dstnodeid="1669" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1670">
-   <BOUNDS type="Node" left="3330" top="12300" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/2/video/effects/brightnesscontrast/effect/brightness">
-   </PIN>
-   <BOUNDS type="Box" left="3330" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1671">
-   <BOUNDS type="Node" left="3330" top="12750" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/3/video/effects/brightnesscontrast/effect/brightness">
-   </PIN>
-   <BOUNDS type="Box" left="3330" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1672">
-   <BOUNDS type="Node" left="3315" top="13155" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/4/video/effects/brightnesscontrast/effect/brightness">
-   </PIN>
-   <BOUNDS type="Box" left="3315" top="11880">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="1668" srcpinname="Input Value" dstnodeid="1670" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1668" srcpinname="Input Value" dstnodeid="1671" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1668" srcpinname="Input Value" dstnodeid="1672" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1677">
-   <BOUNDS type="Node" left="4800" top="11910" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/1/video/effects/blur/effect/gaussian">
-   </PIN>
-   <BOUNDS type="Box" left="4800" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1676">
-   <BOUNDS type="Node" left="5790" top="11505" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="videoBlur">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1676" srcpinname="Input Value" dstnodeid="1677" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1675">
-   <BOUNDS type="Node" left="4785" top="12330" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/2/video/effects/blur/effect/gaussian">
-   </PIN>
-   <BOUNDS type="Box" left="4785" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1674">
-   <BOUNDS type="Node" left="4785" top="12780" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/3/video/effects/blur/effect/gaussian">
-   </PIN>
-   <BOUNDS type="Box" left="4785" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1673">
-   <BOUNDS type="Node" left="4770" top="13185" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/4/video/effects/blur/effect/gaussian">
-   </PIN>
-   <BOUNDS type="Box" left="4770" top="11880">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="1676" srcpinname="Input Value" dstnodeid="1675" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1676" srcpinname="Input Value" dstnodeid="1674" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1676" srcpinname="Input Value" dstnodeid="1673" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1682">
-   <BOUNDS type="Node" left="6135" top="11910" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/1/video/effects/brightnesscontrast/effect/contrast">
-   </PIN>
-   <BOUNDS type="Box" left="6135" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1681">
-   <BOUNDS type="Node" left="7125" top="11505" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="videoContrast">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1681" srcpinname="Input Value" dstnodeid="1682" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1680">
-   <BOUNDS type="Node" left="6120" top="12330" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/2/video/effects/brightnesscontrast/effect/contrast">
-   </PIN>
-   <BOUNDS type="Box" left="6120" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1679">
-   <BOUNDS type="Node" left="6120" top="12780" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/3/video/effects/brightnesscontrast/effect/contrast">
-   </PIN>
-   <BOUNDS type="Box" left="6120" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1678">
-   <BOUNDS type="Node" left="6105" top="13185" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/4/video/effects/brightnesscontrast/effect/contrast">
-   </PIN>
-   <BOUNDS type="Box" left="6105" top="11880">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="1681" srcpinname="Input Value" dstnodeid="1680" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1681" srcpinname="Input Value" dstnodeid="1679" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1681" srcpinname="Input Value" dstnodeid="1678" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1687">
-   <BOUNDS type="Node" left="7755" top="11895" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/1/video/effects/saturation/effect/saturation">
-   </PIN>
-   <BOUNDS type="Box" left="7755" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1686">
-   <BOUNDS type="Node" left="8745" top="11490" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="videoSaturation">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1686" srcpinname="Input Value" dstnodeid="1687" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1685">
-   <BOUNDS type="Node" left="7740" top="12315" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/2/video/effects/saturation/effect/saturation">
-   </PIN>
-   <BOUNDS type="Box" left="7740" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1684">
-   <BOUNDS type="Node" left="7740" top="12765" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/3/video/effects/saturation/effect/saturation">
-   </PIN>
-   <BOUNDS type="Box" left="7740" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1683">
-   <BOUNDS type="Node" left="7725" top="13170" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/4/video/effects/saturation/effect/saturation">
-   </PIN>
-   <BOUNDS type="Box" left="7725" top="11880">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="1686" srcpinname="Input Value" dstnodeid="1685" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1686" srcpinname="Input Value" dstnodeid="1684" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1686" srcpinname="Input Value" dstnodeid="1683" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1710">
-   <BOUNDS type="Node" left="3330" top="14580" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/6/video/opacity">
-   </PIN>
-   <BOUNDS type="Box" left="3330" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1709">
-   <BOUNDS type="Node" left="5400" top="14595" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/7/video/opacity">
-   </PIN>
-   <BOUNDS type="Box" left="5400" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1708">
-   <BOUNDS type="Node" left="3360" top="15780" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/8/video/opacity">
-   </PIN>
-   <BOUNDS type="Box" left="3360" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1707">
-   <BOUNDS type="Node" left="5415" top="15780" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/9/video/opacity">
-   </PIN>
-   <BOUNDS type="Box" left="5415" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1718">
-   <BOUNDS type="Node" left="3330" top="13800" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="canvas1">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1717">
-   <BOUNDS type="Node" left="5385" top="13800" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="canvas2">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1716">
-   <BOUNDS type="Node" left="3330" top="15030" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="canvas3">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1715">
-   <BOUNDS type="Node" left="5400" top="14970" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="canvas4">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE id="1714" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
-   <BOUNDS height="0" left="3330" top="14190" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
-   </PIN>
-   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
-   </PIN>
-   <PIN pinname="Velocity Out" visible="1">
-   </PIN>
-   <PIN pinname="Acceleration Out" visible="1">
-   </PIN>
-   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
-   </PIN>
-   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
-   </PIN>
-   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
-   </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Position Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1718" srcpinname="Input Value" dstnodeid="1714" dstpinname="Go To Position">
-   </LINK>
-   <NODE id="1713" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
-   <BOUNDS height="270" left="5400" top="14190" type="Node" width="1950">
-   </BOUNDS>
-   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
-   </PIN>
-   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
-   </PIN>
-   <PIN pinname="Velocity Out" visible="1">
-   </PIN>
-   <PIN pinname="Acceleration Out" visible="1">
-   </PIN>
-   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
-   </PIN>
-   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
-   </PIN>
-   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
-   </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Position Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1717" srcpinname="Input Value" dstnodeid="1713" dstpinname="Go To Position">
-   </LINK>
-   <NODE id="1712" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
-   <BOUNDS height="0" left="3345" top="15405" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
-   </PIN>
-   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
-   </PIN>
-   <PIN pinname="Velocity Out" visible="1">
-   </PIN>
-   <PIN pinname="Acceleration Out" visible="1">
-   </PIN>
-   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
-   </PIN>
-   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
-   </PIN>
-   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
-   </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Position Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1716" srcpinname="Input Value" dstnodeid="1712" dstpinname="Go To Position">
-   </LINK>
-   <NODE id="1711" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
-   <BOUNDS height="0" left="5415" top="15390" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
-   </PIN>
-   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
-   </PIN>
-   <PIN pinname="Velocity Out" visible="1">
-   </PIN>
-   <PIN pinname="Acceleration Out" visible="1">
-   </PIN>
-   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
-   </PIN>
-   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
-   </PIN>
-   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
-   </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Position Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1715" srcpinname="Input Value" dstnodeid="1711" dstpinname="Go To Position">
-   </LINK>
-   <LINK srcnodeid="1714" srcpinname="Position Out" dstnodeid="1710" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1713" srcpinname="Position Out" dstnodeid="1709" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1712" srcpinname="Position Out" dstnodeid="1708" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1711" srcpinname="Position Out" dstnodeid="1707" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1730">
-   <BOUNDS type="Node" left="7665" top="14565" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/12/video/opacity">
-   </PIN>
-   <BOUNDS type="Box" left="7665" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1729">
-   <BOUNDS type="Node" left="9735" top="14580" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/13/video/opacity">
-   </PIN>
-   <BOUNDS type="Box" left="9735" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1728">
-   <BOUNDS type="Node" left="7695" top="15765" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/11/video/opacity">
-   </PIN>
-   <BOUNDS type="Box" left="7695" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1727">
-   <BOUNDS type="Node" left="9750" top="15765" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/10/video/opacity">
-   </PIN>
-   <BOUNDS type="Box" left="9750" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1726">
-   <BOUNDS type="Node" left="7665" top="13785" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="tableCanvas1">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1725">
-   <BOUNDS type="Node" left="9720" top="13785" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="tableCanvas2">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1724">
-   <BOUNDS type="Node" left="7665" top="15015" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="tableCanvas3">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1723">
-   <BOUNDS type="Node" left="9735" top="14955" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="tableCanvas4">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE id="1722" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
-   <BOUNDS height="0" left="7665" top="14175" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
-   </PIN>
-   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
-   </PIN>
-   <PIN pinname="Velocity Out" visible="1">
-   </PIN>
-   <PIN pinname="Acceleration Out" visible="1">
-   </PIN>
-   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
-   </PIN>
-   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
-   </PIN>
-   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
-   </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Position Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1726" srcpinname="Input Value" dstnodeid="1722" dstpinname="Go To Position">
-   </LINK>
-   <NODE id="1721" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
-   <BOUNDS height="270" left="9735" top="14175" type="Node" width="1950">
-   </BOUNDS>
-   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
-   </PIN>
-   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
-   </PIN>
-   <PIN pinname="Velocity Out" visible="1">
-   </PIN>
-   <PIN pinname="Acceleration Out" visible="1">
-   </PIN>
-   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
-   </PIN>
-   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
-   </PIN>
-   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
-   </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Position Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1725" srcpinname="Input Value" dstnodeid="1721" dstpinname="Go To Position">
-   </LINK>
-   <NODE id="1720" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
-   <BOUNDS height="0" left="7680" top="15390" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
-   </PIN>
-   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
-   </PIN>
-   <PIN pinname="Velocity Out" visible="1">
-   </PIN>
-   <PIN pinname="Acceleration Out" visible="1">
-   </PIN>
-   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
-   </PIN>
-   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
-   </PIN>
-   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
-   </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Position Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1724" srcpinname="Input Value" dstnodeid="1720" dstpinname="Go To Position">
-   </LINK>
-   <NODE id="1719" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
-   <BOUNDS height="0" left="9750" top="15375" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
-   </PIN>
-   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
-   </PIN>
-   <PIN pinname="Velocity Out" visible="1">
-   </PIN>
-   <PIN pinname="Acceleration Out" visible="1">
-   </PIN>
-   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
-   </PIN>
-   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
-   </PIN>
-   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
-   </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Position Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1723" srcpinname="Input Value" dstnodeid="1719" dstpinname="Go To Position">
-   </LINK>
-   <LINK srcnodeid="1722" srcpinname="Position Out" dstnodeid="1730" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1721" srcpinname="Position Out" dstnodeid="1729" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1720" srcpinname="Position Out" dstnodeid="1728" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1719" srcpinname="Position Out" dstnodeid="1727" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1731">
-   <BOUNDS type="Node" left="12870" top="13245" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="canvasScale">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1735">
-   <BOUNDS type="Node" left="11880" top="14160" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0.9">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/6/video/effects/transform/scale">
-   </PIN>
-   <BOUNDS type="Box" left="11880" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1734">
-   <BOUNDS type="Node" left="11865" top="14580" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0.9">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/7/video/effects/transform/scale">
-   </PIN>
-   <BOUNDS type="Box" left="11865" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1733">
-   <BOUNDS type="Node" left="11865" top="15030" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0.9">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/8/video/effects/transform/scale">
-   </PIN>
-   <BOUNDS type="Box" left="11865" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1732">
-   <BOUNDS type="Node" left="11850" top="15435" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0.9">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/9/video/effects/transform/scale">
-   </PIN>
-   <BOUNDS type="Box" left="11850" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1740">
-   <BOUNDS type="Node" left="14445" top="13245" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="tableCanvasScale">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1739">
-   <BOUNDS type="Node" left="13440" top="14205" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/10/video/effects/transform/scale">
-   </PIN>
-   <BOUNDS type="Box" left="13440" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1738">
-   <BOUNDS type="Node" left="13425" top="14625" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/11/video/effects/transform/scale">
-   </PIN>
-   <BOUNDS type="Box" left="13425" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1737">
-   <BOUNDS type="Node" left="13425" top="15075" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/12/video/effects/transform/scale">
-   </PIN>
-   <BOUNDS type="Box" left="13425" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1736">
-   <BOUNDS type="Node" left="13410" top="15480" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0.71">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/13/video/effects/transform/scale">
-   </PIN>
-   <BOUNDS type="Box" left="13410" top="11880">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="1741">
-   <BOUNDS type="Node" left="12885" top="13680" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 2" slicecount="1" values="10">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1731" srcpinname="Input Value" dstnodeid="1741" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1741" srcpinname="Output" dstnodeid="1735" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1741" srcpinname="Output" dstnodeid="1734" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1741" srcpinname="Output" dstnodeid="1733" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1741" srcpinname="Output" dstnodeid="1732" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="1742">
-   <BOUNDS type="Node" left="14445" top="13710" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 2" slicecount="1" values="10">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1740" srcpinname="Input Value" dstnodeid="1742" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1742" srcpinname="Output" dstnodeid="1739" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1742" srcpinname="Output" dstnodeid="1738" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1742" srcpinname="Output" dstnodeid="1737" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1742" srcpinname="Output" dstnodeid="1736" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1746">
-   <BOUNDS type="Node" left="690" top="13125" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/groups/2/bypassed">
-   </PIN>
-   <BOUNDS type="Box" left="690" top="13125">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1745">
-   <BOUNDS type="Node" left="1950" top="12525" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="swTable">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1752">
-   <BOUNDS type="Node" left="690" top="13845" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/5/video/effects/brightnesscontrast/effect/brightness">
-   </PIN>
-   <BOUNDS type="Box" left="690" top="13845">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1751">
-   <BOUNDS type="Node" left="1710" top="13440" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="tableBright">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1751" srcpinname="Input Value" dstnodeid="1752" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1754">
-   <BOUNDS type="Node" left="690" top="14670" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/5/video/effects/blur/effect/gaussian">
-   </PIN>
-   <BOUNDS type="Box" left="690" top="14670">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1753">
-   <BOUNDS type="Node" left="1710" top="14280" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="tableBlur">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1753" srcpinname="Input Value" dstnodeid="1754" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="1755">
-   <BOUNDS type="Node" left="1950" top="12930" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Input 1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1745" srcpinname="Input Value" dstnodeid="1755" dstpinname="Switch">
-   </LINK>
-   <LINK srcnodeid="1755" srcpinname="Output" dstnodeid="1746" dstpinname="f argument&cr;&lf;">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="1756">
    <BOUNDS type="Node" left="7740" top="2190" width="100" height="100">
@@ -5120,41 +2592,7 @@
    </NODE>
    <LINK srcnodeid="1461" srcpinname="Y Output Value" dstnodeid="1761" dstpinname="Input Value">
    </LINK>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1778">
-   <BOUNDS type="Node" left="11475" top="11700" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/groups/1/bypassed">
-   </PIN>
-   <BOUNDS type="Box" left="11475" top="11700">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1777">
-   <BOUNDS type="Node" left="12495" top="10965" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="swVid">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="1779">
-   <BOUNDS type="Node" left="12495" top="11325" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Switch" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input 1" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1777" srcpinname="Input Value" dstnodeid="1779" dstpinname="Switch">
-   </LINK>
-   <LINK srcnodeid="1779" srcpinname="Output" dstnodeid="1778" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <NODE systemname="osc_communicator" filename="osc_communicator.v4p" nodename="osc_communicator.v4p" componentmode="Hidden" id="1786">
+   <NODE systemname="osc_communicator" filename="osc_communicator.v4p" nodename="osc_communicator.v4p" componentmode="InAWindow" id="1786">
    <BOUNDS type="Node" left="14175" top="9210" width="100" height="100">
    </BOUNDS>
    <PIN pinname="osc_route" visible="1" slicecount="1" values="/play">
@@ -5204,106 +2642,14 @@
    </NODE>
    <LINK srcnodeid="1786" srcpinname="receiving" dstnodeid="1783" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1789">
-   <BOUNDS type="Node" left="13470" top="11805" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" visible="1" values="/composition/layers/5/clips/2/connect">
-   </PIN>
-   <BOUNDS type="Box" left="13470" top="11805">
-   </BOUNDS>
-   <BOUNDS type="Window" left="14400" top="5580" width="9000" height="6000">
-   </BOUNDS>
-   <PIN pinname="f argument&cr;&lf;" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="S argument" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1788">
-   <BOUNDS type="Node" left="13485" top="10950" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="tableWhite">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="1">
-   </PIN>
-   </NODE>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="1794">
-   <BOUNDS type="Node" left="4860" top="585" width="100" height="100">
+   <BOUNDS type="Node" left="4860" top="285" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Send String" slicecount="1" values="speed">
    </PIN>
    </NODE>
-   <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="1795">
-   <BOUNDS type="Node" left="13485" top="11370" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" slicecount="1" values="/composition/layers/5/clips/2/connect">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="/composition/layers/5/clips/1/connect">
-   </PIN>
-   <PIN pinname="Switch" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1788" srcpinname="Input Value" dstnodeid="1795" dstpinname="Switch">
-   </LINK>
-   <LINK srcnodeid="1795" srcpinname="Output" dstnodeid="1789" dstpinname="direction">
-   </LINK>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1797">
-   <BOUNDS type="Node" left="14775" top="11790" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" visible="1" values="/composition/layers/5/clips/2/connect">
-   </PIN>
-   <BOUNDS type="Box" left="14775" top="11790">
-   </BOUNDS>
-   <BOUNDS type="Window" left="14400" top="5580" width="9000" height="6000">
-   </BOUNDS>
-   <PIN pinname="f argument&cr;&lf;" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="S argument" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="1796">
-   <BOUNDS type="Node" left="14775" top="11355" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" slicecount="1" values="/composition/layers/5/clips/1/connect">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="/composition/layers/5/clips/2/connect">
-   </PIN>
-   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1796" srcpinname="Output" dstnodeid="1797" dstpinname="direction">
-   </LINK>
-   <LINK srcnodeid="1788" srcpinname="Input Value" dstnodeid="1796" dstpinname="Switch">
-   </LINK>
-   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="1798">
-   <BOUNDS type="Node" left="1875" top="11865" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Input 1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1662" srcpinname="Input Value" dstnodeid="1798" dstpinname="Switch">
-   </LINK>
-   <LINK srcnodeid="1798" srcpinname="Output" dstnodeid="1663" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <LINK srcnodeid="1798" srcpinname="Output" dstnodeid="1667" dstpinname="f argument&cr;&lf;">
-   </LINK>
    <NODE systemname="osc_communicator" filename="osc_communicator.v4p" nodename="osc_communicator.v4p" componentmode="Hidden" id="1802">
    <BOUNDS type="Node" left="17295" top="3195" width="100" height="100">
    </BOUNDS>
@@ -5353,122 +2699,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="1802" srcpinname="receiving" dstnodeid="1799" dstpinname="Y Input Value">
-   </LINK>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1804">
-   <BOUNDS type="Node" left="15630" top="13710" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/groups/6/video/opacity">
-   </PIN>
-   <BOUNDS type="Box" left="15630" top="13695">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1803">
-   <BOUNDS type="Node" left="16635" top="12885" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="WellcomeText">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE id="1805" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
-   <BOUNDS height="0" left="16635" top="13320" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
-   </PIN>
-   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
-   </PIN>
-   <PIN pinname="Velocity Out" visible="1">
-   </PIN>
-   <PIN pinname="Acceleration Out" visible="1">
-   </PIN>
-   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
-   </PIN>
-   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
-   </PIN>
-   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
-   </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Position Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1803" srcpinname="Input Value" dstnodeid="1805" dstpinname="Go To Position">
-   </LINK>
-   <LINK srcnodeid="1805" srcpinname="Position Out" dstnodeid="1804" dstpinname="f argument&cr;&lf;">
-   </LINK>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1810">
-   <BOUNDS type="Node" left="15630" top="14925" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/groups/5/video/opacity">
-   </PIN>
-   <BOUNDS type="Box" left="15630" top="14910">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1809">
-   <BOUNDS type="Node" left="16635" top="14100" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="tableText">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE id="1808" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
-   <BOUNDS height="0" left="16635" top="14535" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Constant Drive" visible="1" slicecount="1" values="0.4">
-   </PIN>
-   <PIN pinname="Max Velocity" visible="1" slicecount="1" values="9999">
-   </PIN>
-   <PIN pinname="Velocity Out" visible="1">
-   </PIN>
-   <PIN pinname="Acceleration Out" visible="1">
-   </PIN>
-   <PIN pinname="Go" pintype="Input" slicecount="1" visible="0" values="1">
-   </PIN>
-   <PIN pinname="Position In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Velocity In" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Force Update" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Pause" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Select Input" pintype="Input" slicecount="1" visible="1" values="Input">
-   </PIN>
-   <PIN pinname="Go To Velocity" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Cyclic" pintype="Input" slicecount="1" visible="0" values="0">
-   </PIN>
-   <PIN pinname="Acceleration" visible="1" slicecount="1" values="20">
-   </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Position Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1809" srcpinname="Input Value" dstnodeid="1808" dstpinname="Go To Position">
-   </LINK>
-   <LINK srcnodeid="1808" srcpinname="Position Out" dstnodeid="1810" dstpinname="f argument&cr;&lf;">
    </LINK>
    <NODE systemname="osc_communicator" filename="osc_communicator.v4p" nodename="osc_communicator.v4p" componentmode="Hidden" id="1814">
    <BOUNDS type="Node" left="17295" top="3930" width="100" height="100">
@@ -5521,7 +2751,7 @@
    <LINK srcnodeid="1814" srcpinname="receiving" dstnodeid="1811" dstpinname="Y Input Value">
    </LINK>
    <NODE id="1838" systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="5850" top="975" width="100" height="100">
+   <BOUNDS type="Node" left="5850" top="675" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1" pintype="Input" slicecount="1" values="0">
    </PIN>
@@ -5539,9 +2769,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="1839">
-   <BOUNDS type="Node" left="5850" top="585" width="100" height="100">
+   <BOUNDS type="Node" left="5850" top="285" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5850" top="585" width="795" height="240">
+   <BOUNDS type="Box" left="5850" top="285" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -5551,9 +2781,9 @@
    <LINK srcnodeid="1839" srcpinname="Y Output Value" dstnodeid="1838" dstpinname="Input Value">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="1841">
-   <BOUNDS type="Node" left="4620" top="1770" width="100" height="100">
+   <BOUNDS type="Node" left="4620" top="1470" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4620" top="1770" width="480" height="480">
+   <BOUNDS type="Box" left="4620" top="1470" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -5565,7 +2795,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="1845">
-   <BOUNDS type="Node" left="3270" top="1560" width="100" height="100">
+   <BOUNDS type="Node" left="3270" top="1260" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -5575,20 +2805,6 @@
    <LINK srcnodeid="7" srcpinname="Output" dstnodeid="1845" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="1845" srcpinname="OnChange" dstnodeid="1841" dstpinname="Y Input Value">
-   </LINK>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="1846">
-   <BOUNDS type="Node" left="13500" top="10395" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="13500" top="10395" width="480" height="480">
-   </BOUNDS>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Y Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1788" srcpinname="Input Value" dstnodeid="1846" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="osc_communicator" filename="osc_communicator.v4p" nodename="osc_communicator.v4p" componentmode="Hidden" id="1850">
    <BOUNDS type="Node" left="17295" top="4665" width="100" height="100">
@@ -6136,60 +3352,144 @@
    </NODE>
    <LINK srcnodeid="1896" srcpinname="Input Value" dstnodeid="1897" dstpinname="S argument">
    </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1898">
-   <BOUNDS type="Node" left="17415" top="11955" width="100" height="100">
+   <NODE componentmode="InABox" id="1907" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="10545" top="1590" type="Node" width="0">
    </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="tableBright">
+   <BOUNDS height="160" left="9135" top="7740" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="240" left="10545" top="1590" type="Box" width="570">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Input Value" visible="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="8001">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="99999">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="portSend">
    </PIN>
    </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1899">
-   <BOUNDS type="Node" left="16605" top="12405" width="100" height="100">
+   <NODE id="1906" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
+   <BOUNDS height="0" left="9420" top="2010" type="Node" width="0">
    </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1">
+   <PIN pinname="Do Send" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/5/video/effects/brightnesscontrast/effect/brightness">
+   <PIN pinname="Remote Port" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="16605" top="12405">
-   </BOUNDS>
-   <PIN pinname="f argument&cr;&lf;" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Remote Host" slicecount="1" visible="1" values="192.168.1.137">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1898" srcpinname="Input Value" dstnodeid="1899" dstpinname="f argument&cr;&lf;">
+   <LINK dstnodeid="1906" dstpinname="Remote Port" linkstyle="PolyLine" srcnodeid="1907" srcpinname="Y Output Value">
    </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="1901">
-   <BOUNDS type="Node" left="17460" top="11055" width="100" height="100">
+   <NODE id="1905" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
+   <BOUNDS height="0" left="9405" top="1215" type="Node" width="0">
    </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="tableBlur">
+   <PIN pinname="Arguments" visible="1">
    </PIN>
-   <PIN pinname="Input Value" visible="1">
+   <PIN pinname="Type Tags" visible="1" slicecount="1" values="f">
+   </PIN>
+   <PIN pinname="Address" visible="1" slicecount="1" values="/play">
+   </PIN>
+   <PIN pinname="OSCMessage" visible="1">
+   </PIN>
+   <PIN pinname="Spread as Bundle" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <NODE systemname="osc_sender" filename="osc_sender.v4p" nodename="osc_sender.v4p" componentmode="Hidden" id="1900">
-   <BOUNDS type="Node" left="16650" top="11505" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="argument&cr;&lf;" visible="1">
-   </PIN>
-   <PIN pinname="direction" slicecount="1" values="/composition/layers/5/video/effects/blur2/effect/gaussian">
-   </PIN>
-   <BOUNDS type="Box" left="16650" top="11505">
-   </BOUNDS>
-   <PIN pinname="f argument&cr;&lf;" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1901" srcpinname="Input Value" dstnodeid="1900" dstpinname="f argument&cr;&lf;">
+   <LINK srcnodeid="1905" srcpinname="OSCMessage" dstnodeid="1906" dstpinname="Input">
    </LINK>
-   <NODE id="1775" systemname="osc_touch360-2" filename="osc_touch360-2.v4p" nodename="osc_touch360-2.v4p" componentmode="InAWindow">
-   <BOUNDS type="Node" left="2628" top="10083" width="0" height="0">
+   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="1904">
+   <BOUNDS type="Node" left="10320" top="735" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1071" top="7888" width="3115" height="4390">
+   <PIN pinname="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1904" srcpinname="Output" dstnodeid="1905" dstpinname="Arguments">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="1903">
+   <BOUNDS type="Node" left="11400" top="1575" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="-1" top="-1" width="3115" height="4390">
+   <BOUNDS type="Box" left="11400" top="1575" width="1875" height="285">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="192.168.1.82">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ipSend">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1903" srcpinname="Output String" dstnodeid="1906" dstpinname="Remote Host">
+   </LINK>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="1913">
+   <BOUNDS type="Node" left="8670" top="330" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   <PIN pinname="Simulate" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="1916">
+   <BOUNDS type="Node" left="2325" top="2040" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Switch" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1916" srcpinname="Output" dstnodeid="1080" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="14" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="AsRaw (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="AsRaw (Value)" componentmode="Hidden" id="1918">
+   <BOUNDS type="Node" left="3360" top="1785" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3360" top="1785" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
+   <PIN pinname="Input" slicecount="1" values="0">
    </PIN>
    </NODE>
+   <LINK srcnodeid="1916" srcpinname="Output" dstnodeid="7" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Delay (Animation)" nodename="Delay (Animation)" componentmode="Hidden" id="1919">
+   <BOUNDS type="Node" left="8685" top="765" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Time" slicecount="1" values="5">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1913" srcpinname="Bang" dstnodeid="1919" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1919" srcpinname="Output" dstnodeid="1906" dstpinname="Do Send">
+   </LINK>
+   <NODE systemname="FlipFlop (Animation)" nodename="FlipFlop (Animation)" componentmode="Hidden" id="1921">
+   <BOUNDS type="Node" left="7725" top="975" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1919" srcpinname="Output" dstnodeid="1921" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="1921" srcpinname="Output" dstnodeid="1916" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="1916" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="1918" srcpinname="Output" dstnodeid="1916" dstpinname="Input 1">
+   </LINK>
    </PATCH>

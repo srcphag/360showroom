@@ -1,0 +1,99 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="D:\admira-showroom\machines\360VLC_player.v4p" systemname="360VLC_player" filename="D:\admira-showroom\machines\360VLC_player.v4p">
+   <BOUNDS type="Window" left="10260" top="6090" width="3780" height="4680">
+   </BOUNDS>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="285" top="1560" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="play">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="465" top="1050" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="loop">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="1095" top="510" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="speed">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="file_dir" filename="file_dir.v4p" nodename="file_dir.v4p" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="1410" top="1455" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="videoFile" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="4395" top="4575" width="9555" height="7500">
+   </BOUNDS>
+   <PIN pinname="tableFile" visible="1">
+   </PIN>
+   <PIN pinname="extension" slicecount="1" visible="1" values="*.mp4*">
+   </PIN>
+   <PIN pinname="extensionTable" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="11">
+   <BOUNDS type="Node" left="285" top="2835" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="285" top="2835" width="1005" height="270">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="vidTexture">
+   </PIN>
+   </NODE>
+   <NODE systemname="FileStream (DX11.Texture Vlc)" filename="%VVVV%\packs\dx11\nodes\plugins\vlc\VVVV.DX11.Nodes.Vlc.dll" nodename="FileStream (DX11.Texture Vlc)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="285" top="2160" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="285" top="2160" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Play" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Speed" visible="1">
+   </PIN>
+   <PIN pinname="Loop" visible="1">
+   </PIN>
+   <PIN pinname="Volume" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Texture Out" dstnodeid="11" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Input Value" dstnodeid="20" dstpinname="Speed">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Input Value" dstnodeid="20" dstpinname="Loop">
+   </LINK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="26">
+   <BOUNDS type="Node" left="1425" top="1020" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1425" top="1020" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="*.mp4*">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="Output String" dstnodeid="16" dstpinname="extension">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Output String" dstnodeid="16" dstpinname="extensionTable">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="videoFile" dstnodeid="20" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Input Value" dstnodeid="20" dstpinname="Play">
+   </LINK>
+   </PATCH>

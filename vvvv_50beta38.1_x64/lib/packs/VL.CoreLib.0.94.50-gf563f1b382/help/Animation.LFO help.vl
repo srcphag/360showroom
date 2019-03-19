@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="Mb2T0662T03Peq3H4bOkpw" Version="0.94" IsTrusted="true">
+  <Patch Id="VgmkYbUAe5bQNas9wxl6M1">
+    <Canvas Id="EUa0YkM8yVFMJuonOPbdcV" DefaultCategory="Main" CanvasType="FullCategory" />
+  </Patch>
+  <NugetDependency Id="PHrC4G4EYBINwsAubLcIhr" Location="VL.Core" Version="0.93.73-g7f1bfe5760" />
+  <NugetDependency Id="UR2DOkl6yzlL2sxH5j6o6M" Location="VL.CoreLib" Version="0.93.73-g7f1bfe5760" />
+</Document>

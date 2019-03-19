@@ -1,0 +1,175 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="D:\admira-showroom\machines\windows_position.v4p" systemname="windows_position" filename="D:\admira-showroom\machines\windows_position.v4p">
+   <BOUNDS type="Window" left="1200" top="2955" width="9000" height="8715">
+   </BOUNDS>
+   <NODE id="11" nodename="Window (Windows)" systemname="Window (Windows)">
+   <BOUNDS height="270" left="1545" top="6240" type="Node" width="4275">
+   </BOUNDS>
+   <PIN pinname="Alpha" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Title" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="X" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Update" slicecount="1" visible="1" values="0.00000">
+   </PIN>
+   <PIN pinname="Width" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Height" slicecount="1" visible="1" values="0.52">
+   </PIN>
+   <PIN pinname="Windows to exclude (comma-separated title-list)" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Exclude VVVV Windows" visible="1">
+   </PIN>
+   <PIN pinname="Repaint" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Handle" visible="1">
+   </PIN>
+   <PIN pinname="Y out" visible="1">
+   </PIN>
+   <PIN pinname="X out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="8" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="4350" top="825" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="7005" top="6225" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="690" left="4350" top="825" type="Box" width="705">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="WindowLists (Windows)" id="6" systemname="WindowLists (Windows)">
+   <BOUNDS type="Node" left="4365" top="1680" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Update" visible="1">
+   </PIN>
+   <PIN pinname="VVVV Windows" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Update">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5025" top="2100" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Window" left="9615" top="8835" width="215" height="160">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5025" top="2100" width="3480" height="2445">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="VVVV Windows" dstnodeid="5" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="GetSlice (String)" id="4" systemname="GetSlice (String)">
+   <BOUNDS type="Node" left="5025" top="4695" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <NODE nodename="HandleFromCaption (Windows)" id="3" systemname="HandleFromCaption (Windows)">
+   <BOUNDS type="Node" left="5025" top="5115" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Title" visible="1">
+   </PIN>
+   <PIN pinname="Handle" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="3" dstpinname="Title">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Handle" dstnodeid="11" dstpinname="Handle">
+   </LINK>
+   <NODE nodename="IOBOX (VALUE ADVANCED)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="5820" top="4665" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Window" left="9975" top="9390" width="215" height="160">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5820" top="4665" width="630" height="270">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="6">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Index">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5025" top="5775" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Window" left="9705" top="10965" width="215" height="160">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5025" top="5775" width="2970" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="1" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6480" top="4650" width="2370" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6480" top="4650" width="2370" height="270">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="215" height="160">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Select one of the VVVV Windows|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
+   <BOUNDS type="Node" left="2925" top="6645" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2925" top="6645" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Y out" dstnodeid="12" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="13">
+   <BOUNDS type="Node" left="1545" top="6660" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1545" top="6660" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="X out" dstnodeid="13" dstpinname="Y Input Value">
+   </LINK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   </PATCH>

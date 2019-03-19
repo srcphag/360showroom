@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE ROOT PUBLIC "" ""[]>
+<Editor version="4">
+  <Spread>
+    <Item Position="-1, 0.565" ProjectedPosition="-1, 0.565" Id="120" />
+    <Item Position="-0.7142857, 0.565" ProjectedPosition="-0.7142857, 0.565" Id="121" />
+    <Item Position="-0.4285714, 0.565" ProjectedPosition="-0.4285715, 0.565" Id="122" />
+    <Item Position="-0.1428571, 0.565" ProjectedPosition="-0.1428571, 0.565" Id="123" />
+    <Item Position="0.1428571, 0.565" ProjectedPosition="0.1428572, 0.565" Id="124" />
+    <Item Position="0.4285714, 0.565" ProjectedPosition="0.4285715, 0.565" Id="125" />
+    <Item Position="0.7142857, 0.565" ProjectedPosition="0.7142857, 0.565" Id="126" />
+    <Item Position="1, 0.565" ProjectedPosition="1, 0.565" Id="127" />
+    <Item Position="-1, 0.2825" ProjectedPosition="-1, 0.2825" Id="128" />
+    <Item Position="-0.7142857, 0.2825" ProjectedPosition="-0.7142857, 0.2825" Id="129" />
+    <Item Position="-0.4285714, 0.2825" ProjectedPosition="-0.4285715, 0.2825" Id="130" />
+    <Item Position="-0.1428571, 0.2825" ProjectedPosition="-0.1428571, 0.2825" Id="131" />
+    <Item Position="0.1428571, 0.2825" ProjectedPosition="0.1428572, 0.2825" Id="132" />
+    <Item Position="0.4285714, 0.2825" ProjectedPosition="0.4285715, 0.2825" Id="133" />
+    <Item Position="0.7142857, 0.2825" ProjectedPosition="0.7142857, 0.2825" Id="134" />
+    <Item Position="1, 0.2825" ProjectedPosition="1, 0.2825" Id="135" />
+    <Item Position="-1, 0" ProjectedPosition="-1, 0" Id="136" />
+    <Item Position="-0.7142857, 0" ProjectedPosition="-0.7142857, 0" Id="137" />
+    <Item Position="-0.4285714, 0" ProjectedPosition="-0.4285715, 0" Id="138" />
+    <Item Position="-0.1428571, 0" ProjectedPosition="-0.1428571, 0" Id="139" />
+    <Item Position="0.1428571, 0" ProjectedPosition="0.1428572, 0" Id="140" />
+    <Item Position="0.4285714, 0" ProjectedPosition="0.4285715, 0" Id="141" />
+    <Item Position="0.7142857, 0" ProjectedPosition="0.7142857, 0" Id="142" />
+    <Item Position="1, 0" ProjectedPosition="1, 0" Id="143" />
+    <Item Position="-1, -0.2825" ProjectedPosition="-1, -0.2825" Id="144" />
+    <Item Position="-0.7142857, -0.2825" ProjectedPosition="-0.7142857, -0.2825" Id="145" />
+    <Item Position="-0.4285714, -0.2825" ProjectedPosition="-0.4285715, -0.2825" Id="146" />
+    <Item Position="-0.1428571, -0.2825" ProjectedPosition="-0.1428571, -0.2825" Id="147" />
+    <Item Position="0.1428571, -0.2825" ProjectedPosition="0.1428572, -0.2825" Id="148" />
+    <Item Position="0.4285714, -0.2825" ProjectedPosition="0.4285715, -0.2825" Id="149" />
+    <Item Position="0.7142857, -0.2825" ProjectedPosition="0.7142857, -0.2825" Id="150" />
+    <Item Position="1, -0.2825" ProjectedPosition="1, -0.2825" Id="151" />
+    <Item Position="-1, -0.565" ProjectedPosition="-1, -0.5650001" Id="152" />
+    <Item Position="-0.7142857, -0.565" ProjectedPosition="-0.7142857, -0.5650001" Id="153" />
+    <Item Position="-0.4285714, -0.565" ProjectedPosition="-0.4285715, -0.5650001" Id="154" />
+    <Item Position="-0.1428571, -0.565" ProjectedPosition="-0.1428571, -0.5650001" Id="155" />
+    <Item Position="0.1428571, -0.565" ProjectedPosition="0.1428572, -0.5650001" Id="156" />
+    <Item Position="0.4285714, -0.565" ProjectedPosition="0.4285715, -0.5650001" Id="157" />
+    <Item Position="0.7142857, -0.565" ProjectedPosition="0.7142857, -0.5650001" Id="158" />
+    <Item Position="1, -0.565" ProjectedPosition="1, -0.5650001" Id="159" />
+  </Spread>
+</Editor>

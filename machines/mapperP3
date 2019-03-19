@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE ROOT PUBLIC "" ""[]>
+<Editor version="4">
+  <Spread>
+    <Item Position="-1.062, 0.7459998" ProjectedPosition="-0.8496, 0.5967999" Id="48" />
+    <Item Position="-0.3333333, 0.7349998" ProjectedPosition="-0.2666667, 0.5879999" Id="49" />
+    <Item Position="0.3333333, 0.7149999" ProjectedPosition="0.2666667, 0.5719999" Id="50" />
+    <Item Position="1.071, 0.7149999" ProjectedPosition="0.8568001, 0.5719999" Id="51" />
+    <Item Position="-1.059, 0.2503333" ProjectedPosition="-0.8471999, 0.2002667" Id="52" />
+    <Item Position="-0.3333333, 0.1883333" ProjectedPosition="-0.2666667, 0.1506667" Id="53" />
+    <Item Position="0.3333333, 0.1883333" ProjectedPosition="0.2666667, 0.1506667" Id="54" />
+    <Item Position="1.072, 0.1883333" ProjectedPosition="0.8576, 0.1506667" Id="55" />
+    <Item Position="-1.062, -0.1723333" ProjectedPosition="-0.8496, -0.1378666" Id="56" />
+    <Item Position="-0.3333333, -0.1903333" ProjectedPosition="-0.2666667, -0.1522666" Id="57" />
+    <Item Position="0.3333333, -0.1883333" ProjectedPosition="0.2666667, -0.1506667" Id="58" />
+    <Item Position="1.071, -0.1883333" ProjectedPosition="0.8568001, -0.1506667" Id="59" />
+    <Item Position="-1.042, -0.7349998" ProjectedPosition="-0.8336, -0.5879998" Id="60" />
+    <Item Position="-0.3333333, -0.7249998" ProjectedPosition="-0.2666667, -0.5799999" Id="61" />
+    <Item Position="0.3333333, -0.7249998" ProjectedPosition="0.2666667, -0.5799999" Id="62" />
+    <Item Position="1.07, -0.7249998" ProjectedPosition="0.8559999, -0.5799999" Id="63" />
+  </Spread>
+</Editor>

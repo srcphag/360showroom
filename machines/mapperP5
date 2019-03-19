@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE ROOT PUBLIC "" ""[]>
+<Editor version="4">
+  <Spread>
+    <Item Position="-1.119, 0.5000002" ProjectedPosition="-0.8952, 0.4000002" Id="16" />
+    <Item Position="1.044, 0.6070001" ProjectedPosition="0.8352001, 0.4856001" Id="17" />
+    <Item Position="-1.094, -0.589" ProjectedPosition="-0.8752, -0.4712" Id="18" />
+    <Item Position="1.089, -0.454" Selected="True" ProjectedPosition="0.8712001, -0.3632001" Id="19" />
+  </Spread>
+</Editor>
